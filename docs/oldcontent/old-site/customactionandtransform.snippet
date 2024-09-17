@@ -1,0 +1,50 @@
+<p>
+Very often you may require to add an additional action on the field in a section or grid; for example, when clicking the field open the dialog, when hovering over the field open the customized tooltip control. Creating the customized field just to achieve this simple action is a lot of work, so ve introduced new methods to achieve this.
+</p>
+<code>
+addFieldAction(column, listenF,actionF)
+</code>
+and
+<code>
+removeFieldAction(column,actionF,removalF)	
+</code>
+
+<p>Example:
+	<code>
+	grid.addFieldAction("status",function(field,f){
+	field.getActiveDom().addEventListener("click",f);},
+	function(field){
+	console.log("When click on the status field in the grid, do something meaningful");
+	});
+	</code>
+listenF is a function that attaches the listener on a field, it has two arguments as shown in the example above, field and a function to be executed upon event. The second function has one argument, the field that received the event. In the example above, when the user clicks on the status field on any row in the grid, the function is triggered. 
+You may also call this function for already rendered grid or section, without re-rendering the control.
+</p>
+<p> 
+The similar idea is used with following methods:
+<code>
+addFieldDomTransform(column, transformF);
+</code>
+and
+<code>
+removeFieldDomTransform(column);
+</code>
+When you need to do some minor change in the way the field in the grid or section is displayed, and that change depends on the metadata or data in the field, you should use these methods.
+Example:
+<code>
+g.addFieldDomTransform("status",[function(field)
+                                 {field.getActiveDom().style.textDecoration="underline";},
+				 function(field){
+				 field.getActiveDom().style.textDecoration="none";
+				 }					
+                                ]);
+</code>
+This method takes two arguments: field name and the array of maximum two functions. First function in array is used to put the decoration on the field dom, while the second (optional) funciton is used to remove it. Why we need the second function? You may require it if you don't want the decoration to be used on grid or section anymore, simply call the 
+<code>
+g.removeFieldDomTransform("status");
+</code>
+This call will use the "removal" function to clean decorations from all the fields in the grid. 
+<p>
+Another, more subtle reason to put the removal function in addFieldTransform is when you want to decorate the field depending on its data. Example, color the field red if the status is "APPR". If the field value changes on the field, the previous decoration should be cleared to apply the new one. In the previous example, remove the red background color for the field before applying decoration based on another field value.
+</p>
+</p>

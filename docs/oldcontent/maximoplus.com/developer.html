@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    
+    <title>MaximoPlus</title>						
+    <meta name="description" content="" />
+    
+    <!-- Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   <!-- All CSS Styles -->
+    <link type="text/css" href="bootstrap3.3.7/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <!--link type="text/css" href="css/animate.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/swiper.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/magnific-popup.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/styles/style-blue.css" rel="stylesheet" media="screen" /--> 	
+    <!--link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" media="screen" /-->
+    <link type="text/css" href="css/styles/dev-guide.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    
+    <!-- Media Queries -->
+    <!--link type="text/css" href="css/media.css" rel="stylesheet" media="screen" /-->
+    
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr.js"></script> 	
+    
+    <!-- Comments for IE8 and Lower -->				
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->     
+    
+    <!-- Gradient Support IE9 -->
+    <!--[if gte IE 9]>
+        <style type="text/css">
+          .gradient {
+          filter: none;
+          }
+        </style>
+        <![endif]-->	
+  </head>
+  <body>
+    
+            
+    <!-- Header -->
+<nav class="navbar navbar-default dev-navbar">
+  <div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="#">
+        <img src="img/white_logo_transparent_background.png" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+        <li><a href="./index.html#developer">Download</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Header -->
+    
+    
+    <!-- Content -->
+    <div id="content" class="container">
+      <div class="row">
+	<div class="col-md-3 col-xs-12">
+	  <ul class="nav nav-pills nav-stacked" id="stacked-menu" >
+            <li><a class="nav-container" href="#introduction">Introduction<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+            <li><a class="nav-container" href="#installation">Installation<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+            <li>
+              <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" href="#p1">Tutorial<div class="caret-container"><span class="caret arrow"></span></div></a>    
+              
+              <ul class="nav nav-pills nav-stacked collapse" id="p1">
+		<li><a href="#quickstart">Quick Start</a></li>
+		<li><a href="#prepare">Preparing the Mobile Project</a></li>
+		<li><a href="#basics-contlists">Basics - Containers and Lists</a></li>
+		<li><a href="#sections">Sections</a></li>
+		<li><a href="#fieldsmeta">Fields, Metadata and Lookups</a></li>
+		<li><a href="#qbesearch">Adding the QBE Search Page</a></li>
+		<li><a href="#relcontainer">RelContainer</a></li>
+		<li><a href="#saving">Saving, calling the server actions, callbacks and promises</a></li>
+		<li><a href="#statuschange">Changing the status, SingleMboContainer, extended Signature Security</a></li>
+		<li><a href="#workflow">Workflow Component</a></li>
+		<li><a href="#offline">Offline Mode</a></li>
+		<li><a href="#customize">Component Customization Basics</a></li>
+		<li><a href="#changefield">Changing the behavior of the default text field</a></li>
+		<li><a href="#standalonecomp">Creating Standalone Component - Swipe to Delete List</a></li>
+		<li><a href="#mbocommandcont">MboCommandContainer</a></li>
+		<li><a href="#polymertutorial">Polymer Template Video Tutorial</a></li>
+              </ul>
+              
+            </li>
+            <li>
+              <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" href="#p2">Concepts<div class="caret-container"><span class="caret arrow"></span></div></a>          
+              <ul class="nav nav-pills nav-stacked collapse" id="p2">
+		<li>
+		  <a class="nav-subcontainer" data-toggle="collapse" data-parent="#p2" href="#p2cont">Containers<div class="caret-container"><span class="caret arrow"></span></div></a>          
+		  <ul class="nav nav-pills nav-stacked collapse" id="p2cont">
+		    <li><a href="#contabout">Container Concepts</a></li>
+		    <li><a href="#appcontainer">AppContainer</a></li>
+		    <li><a href="#relcontainer">RelContainer</a></li>
+		    <li><a href="#singlembocontainer">SingleMboContainer</a></li>
+		    <li><a href="#uniquemboappcontaienr">UniqueMboAppContainer</a></li>
+		    <li><a href="#querymbocontainer">QueryMboContainer</a></li>
+		    <li><a href="#bookmarkmbocontainer">BookmarkMboContainer</a></li>
+		    <li><a href="#inboxmbocontainer">InboxMboContainer</a></li>
+		    <li><a href="#personmbocontainer">PersonMboContainer</a></li>
+		    <li><a href="#mbocommandcontainer">MboCommandContainer</a></li>
+		    <li><a href="#contfuncoverview">Overview of Contianer function</a></li>
+		  </ul>
+		</li>
+		<li>
+		  <a class="nav-subcontainer" data-toggle="collapse" data-parent="#p2" href="#p2vis">Visual Components<div class="caret-container"><span class="caret arrow"></span></div></a>          
+		  <ul class="nav nav-pills nav-stacked collapse" id="p2vis">
+		    <li><a href="#viscompabout">Visual Components Concepts</a></li>
+		    <li><a href="#viscompstruct">Structure and hierarchy of Components</a></li>
+		    <li><a href="#viscompcustom">The main principles of Components customization</a></li>
+		    <li><a href="#complc">The Components Life Cycle</a></li>
+		    <li><a href="#compskeleton">The Component Skeleton</a></li>
+		    <li><a href="#gridsandlists">Grids and Lists</a></li>
+		    <li><a href="#visompsect">Section</a></li>
+		    <li><a href="#fields">Fields</a></li>
+		    <li><a href="#abstractlistdialog">AbstractListDialog</a></li>
+		    <li><a href="#abstractqbelistdialog">AbstractQbeListDialog</a></li>
+		    <li><a href="#gldialog">GLDialog</a></li>
+		    <li><a href="#workflowcontv">WorkflowControl</a></li>
+		  </ul>
+		</li>
+		<li><a href="#offlineconcepts">Offline</a></li>
+		<li><a href="#errorhandling">Error Handling</a></li>
+		<li><a href="#metadataconcepts">Metadata</a></li>
+		<li><a href="#secconcepts">Security</a></li>
+		<li>
+		  <a class="nav-subcontainer" data-toggle="collapse" data-parent="#p2" href="#p2server">Server Side<div class="caret-container"><span class="caret arrow"></span></div></a>          
+		  <ul class="nav nav-pills nav-stacked collapse" id="p2server">
+		    <li><a href="#cors">CORS</a></li>
+		    <li><a href="#mpstartup">MaximoPlus start parameters</a></li>
+		    <li><a href="#authentication">Authentication</a></li>
+		    <li><a href="#uploaddownload">Upload and Download</a></li>
+		  </ul>
+		</li>
+              </ul>
+            </li>
+	  </ul>
+	</div>
+
+	<div class="col-md-9 col-xs-12 mp-text">
+	  <h2 id="introduction">Introduction</h2>
+	  <p>
+	    Before we get started, let's again recap what is MaximoPlus. It is a system for building the Maximo based mobile applications, comprising of: MaximoPlus server, core MaximoPlus library and framework, out of the box MaximoPlus mobile templates and the MaximoPlus GUI development tool. MaximoPlus server is a standalone server that runs Maximo in the background, and on top of that all the MaximoPlus additions and the web server. MaximoPlus server needs to be prepared at the beginning of the new project. Typically you don't need to customize anything on the server side, unless you require custom login security, or upload facility. MaximoPlus application will typically live completely on the mobile device and communicate directly with the server. For the more complex scenarios or the (mobile) web projects, the application files are located on the MaximoPlus web server. 
+	  </p>
+	  <p>
+	    The heart of the MaximoPlus framework is the core MaximoPlus library. It contains all the logic that communicates with MaximoPlus server, basic MaximoPlus components and the logic for the components control and orchestration.
+	  </p>
+		<p>
+		  Let's demonstrate what it takes to create the minumum MaximoPlus app.
+		</p>
+		
+		<pre><code>var <var>poCont</var>=new maximoplus.controls.AppContainer("po","po");
+var <var>poGrid</var>=new maximoplus.controls.Grid(poCont,["ponum","status","description","siteid"],20);
+poGrid.renderDeferred(document.getElementById("placeholder"));
+poGrid.initData();</code></pre>
+		<p>
+		  With just four lines of javascript we made our "application". Lets see what each line means.
+		</p>
+		<p>
+		  The first line defines the Application Container, MaximoPlus Component that does most of the actual work. It communicates with the server in the background, passes the data to and from its children components and the MaximoPlus server side. MaximoPlus uses the Maximo security model, the privileges are defined on the application level. Therefore, we need to specify the application (po) and the underlying MBO (po). If the user doesn't have the privileges for the PO app in Maximo, she will not be able to use our new MaximoPlus application.
+		</p>
+		<p>
+		  The second line binds the Visual Component, Grid,  to the <code>poCont</code> Container. The component is completely equivalent to the table control from the Maximo application designer. We specify the columns we want to be displayed in the Grid, and the number of rows it will display (20). Third line draws the Component on our web page, and the fourth (optional) line fetches the data into Component.
+		</p>
+		<p>
+		  Lets now move one step further. We want to make the data editable, so let's add one the Section Component to our app. It will have several fields more than the poGrid Component. Note the <code>vendor.name</code> attribute name - it is the attribute defined on the <code>vendor</code> relationship, analogue to what we can do in Maximo.
+		</p>
+		<pre><code>var <var>poSect</var>=new maximoplus.controls.Section(b,["ponum", "description", "revisionnum", "vendor","vendor.name"]);
+poSect.renderDeferred(document.getElementById("sectplaceholder");</code></pre>
+		<p>
+		  We will now change the label of one Field, and add the lookup to another:
+		</p>
+		<pre><code>poSect.addMeta("vendor","hasLookup",true);
+poSect.addMeta("vendor","listColumns",["company","name"]);
+poSect.addMeta("ponum","title","PO#");</code></pre>
+<p>If you have run this in the browser , you may have noticed it doesn't look like a mobile appliacation. The code from above is for the demonstration purposes only and uses the basic  MaximoPlus Components. Follow allong the tutorial to learn how to get real Mobile app up and running. </p>
+
+	  <h2 id="installation">Installation</h2>
+	  <p>Prerequisites for installation are: installed JDK 1.7 or newer, working Maximo database and the Maximo ear file.</p>
+	  <p>Unzip the MaximoPlus distribution file and prepare your project by doing the following:</p>
+	  <p>
+	    <pre>Pick a name of your project, say my_first_project.
+Assuming  the location of the maximo.ear is C:\maximo.ear,
+run the prepare script as:
+
+prepare.bat my_first_project C:\maximo.ear
+
+For *Nix and MacOS, you will run something like
+
+./prepare.sh my_first_project ~/maximo.ear
+
+The installation may take several minutes to complete.</pre>
+	  </p>
+	  <p>
+	    Once you have your project prepared, it is time to  test it. Your project will be deployed in the deployment/my_first_project directory relative to the directory where you run the prepare script. Find the startup script (start.bat or start.sh) in the project directory, and start the server. By default the server will run on the port 8080.
+	  </p>
+	  <p>
+	    Open the public/demo/test.js file from the your project directory in editor, delete the existing code and copy/paste the code from <a href="#introduction">developer</a> introduction. Open the demo in the browser: <a href="http://localhost:8080/demo/test.html">http://localhost:8080/demo/test.html</a>
+	  </p>
+	  <p>As already discussed  in the introduction, this will give you the web application. As you might have already guessed, for the mobile application, these files will typically be stored on the mobile device itself, not served from the web server. Details will be found in the following section.</p>
+	  <p>You can change the port of the MaximoPlus server by adding the <code>-DmaximoplusPort=your_port </code> to your startup script. If you want to use the different maximo.properties file, not the one in the maximol.ear, specify it with the <code>-Dmaximo.properties=path_to_my_maximo.properties</code> in the startup script.</p>
+	  <h2>Tutorial- Creating Mobile apps with the built-in template</h2>
+	  <h3 id="quickstart">Quick Start</h3>
+	  <iframe allowfullscreen width='852' height='479' scrolling='no' frameborder='0' style='border: none;' src='https://www.wevideo.com/embed/#741315880' allowfullscreen></iframe>
+	  <p>Follow the rest of the tutorial below, or check out the video with another tutorial <a href="#polymertutorial">Polymer Template Tutorial</a></p>
+	  <h3 id="prepare">Preparing the Mobile project</h3>
+	  	      <p>The recommended way of developing the MaximoPlus mobile app is to use the Cordova/Phonegap framework. Go to the <a href="https://cordova.apache.org/">Cordova website</a> and follow the installation instructions for Cordova and your desired mobile platform (Android, IOS, Windows, Blackberry).</p>
+	      <p>MaximoPlus comes with the several Cordova Templates and demo Cordova applications. Each template and demo is based on a different HTML5 framework. </p>
+	      <p>You can use these templates, or create your own template and Components based on the diferrent HTML mobile framework. To familiraze yourself with MaximoPlus it is recommended to follow this tutorial, and start by creating the Mobile application from the template. Next section will give you the instructions how to create new Components.
+	      </p>
+	      <p>For this tutorial we will use the template based on a brilliant <a href="http://framework7.io/">Framework7 HTML5 framework</a>. Go to the folder <code>public</code> of your project, and create the new Cordova project  :
+	      </p>
+	      <pre><code>cordova create my_first_project
+cordova platform add browser
+cordova platrorm add android (optional)
+cordova plarform add ios (optional)
+	      </code></pre>
+	      <p> Last two lines are optional, you can start the development with the Cordova "browser platform", and run the app on the physical device only in later stages. Now copy the content of the <code>public/demo/cordova_apps/templates/framework7</code> to the <code>public/my_first_project/www</code>. Edit the file config.xml ,and change the content tag to <code>&ltcontent src="app.html" &gt</code>. To see how the template looks like , run <code>cordova run browser</code>, and open the page in Mobile Device responsive mode in Chrome. Note that you may face the security problems when actually try to run your app later through the <code>cordova run browser</code> command. You have to setup <code>CORS</code> headers in MaximoPlus, read more about how to do it in <a href="#cors">CORS setup</a> section of the Manual.
+	      </p>
+
+	      <p>
+		MaximoPlus is a library for creating the Single Page Applications, and our application will be contained in the single HTML page - <code>app.html</code>. You may open the file to check the required javascript and css files. Go to the end of the <code>&ltbody&gt</code> tag and you will find the scripts required to run the app: <code>cordova.js</code> and <code>framework7.js</code> are obviously required for Cordova and Framework7. Next script,<code>main.js</code> is the MaximoPlus library itself - you will find it in the templates, and in the <code>public/javascript</code> directory of your project. What is left for you to customize are <code>mpf7.js</code> - contains the customized MaximoPlus components for Framework7, and <code>app.js</code> - the actual application. Open the <code>app.js</code> in your preferred editor and get started with the app.
+	      </p>
+	      <p>
+		As already mentioned, all the files will be deployed to the device itself, as usually is the case for mobile apps, they will not be served from the web server. Therefore, we need to inform the device about the MaximoPlus server location. That is the meaing of the <code>maximoplus.net.globalFunctions.serverRoot</code> function from the beggining of the app.html. Don't forget to replace the existing code with your IP address and the port of MaximoPlus server.
+
+		The statement <code>document.addEventListener('deviceready', app, false);</code> is required by Cordova, the app needs to be started only when the devide is ready. The app function from the template doesn't do much by default, it just register the Framefork7 views. If you are interested in learning more about the Framework7 page structure, you can find all the information required on their site; we will continue straight to the code.
+	      </p>
+	      <h3 id="basics-contlists">Basics - Containers and Lists</h3>
+	      <p>
+		Let's create the simple app now, we will use the simplified PO application as an example. Add the following lines to the app function:</p>
+	      <pre><code>
+ var poCont = new maximoplus.controls.AppContainer("po","po");
+ var poList = new F7List(poCont,["ponum","status","description","siteid"],20,"polisttemplate",view1,"index1-content");
+ poList.renderDeferred(document.getElementById("view1-list-content"));
+ poList.initData();
+	      </code></pre>
+	      <p>We already discussed in the introduction the role of the <code>AppContainer</code>. You can find more about the Containers in the Concepts part. What is the F7List from the above snippet? It is the customized maximoplus.controls.Grid for Framework7. Lists are the very common concept in many Mobile applications, our Component F7List is the implementation of that concept. Under the hood is just the customized <code>maximoplus.controls.Grid</code> Component. We have added the usual Mobile List look and feel to it, and added some mobile features like the infinite scrolling.
+	      </p>
+	      <p>If you remember the original maximoplus.controls.Grid Component, you know that it has only 3 parameters, so what are these <code>view1</code>, <code>polisttemplate</code> and <code>index1</code> in its constructor argument list ?</p>
+	      <p>When you customize the Components, and create the template, you need to adapt the Component to the  HTML framework of your choise, and add the features you require. In our constructor, <code>view1</code> is the Framework7 view into which the list is rendered. <code>"polisttemplate"</code> is the template of the list line. You can find more about the views and templates on the Framework7 web site. Basically, views are separate parts of the application, each occupying the whole screen, and the templates are the empty HTML snippets which we populate with the data. The <code>polisttemplate</code> template will be used to render the item in the list - this is where you can define your's list item look and feel. Open the app.html and add the following to  it:
+		<pre><code> &lt;template id="polisttemplate"&gt;
+    &lt;div&gt;PO#: {{PONUM}} {{DESCRIPTION}}&lt;/div&gt;
+    &lt;div&gt;Status: {{STATUS}} {{SITEID}} &lt;/div&gt;
+ &lt;/template&gt; </code></pre>
+<p>So this is just the HTML snippet that display the values for the line. Try to put some more attributes or change the template structure to see what happens.</p>
+	      	      <h3 id="sections">Sections</h3>
+	      <p><code>"index1"</code> is the div id of the details page. We have customized the F7List Component, so when the user taps the line item, it opens the details page. If you try to run it now, you will of course find out that it is empty, we haven't added nothing to it yet. Lets fix that:
+		<code><pre>
+   var poSection = new F7Section(poCont,["ponum","status","description","siteid","purchaseagent","vendor","orderdate","totalcost","shipvia"]);
+   poSection.renderDeferred(document.getElementById("view1-content"));
+   poSection.initData(); </pre></code></p>
+	      <p>F7Section is a customized maximoplus.controls.Section . Apart from look and feel, it has also automatically added the date lookup for the Date Fields. We just rendered it in its alloted place in the app.html. You can now do again <code>cordova run browser</code> to see how your app is coming along.</p>
+	      <p>It surely looks nice, but you don't expect the users to do the excessive typing using the mobile device. Let's add some lookups to make our app more usable. Add the following lines before <code>poSection.initData</code>:</p>
+	      <pre><code> poSection.addMeta("shipvia","hasLookup",true);
+ poSection.addMeta("shipvia","dialogTemplate","dialogTemplate");
+ poSection.addMeta("shipvia","lineTemplate","valueListTemplate");</pre></code>
+	      <h3 id="fieldsmeta">Fields, Metadata and Lookups</h3>
+	      <p>What does the function addMeta do? It is time to introduce couple of simple concepts: Fields and Metadata. </p>&#14;  
+	      <p>Obviously, when the Section is created, underneath it creates the controls which are bound to the Maximo attributes - Fields. For each attribute you have specified in the F7Section, one Field will be created. When you render a Section on the screen, MaximoPlus fetches the  metadata from the MaximoPlus server: field label, data  type, domain id, length of the field and many more. The metadata is passed to the Field at the time of it's rendering. Based on the metadata, Section decides what to draw; if the type is YORN it will create the check box, if it is ALN or UPPER it will create the text field. Also, the labels are read from the same metadata.  If you want to customize the behavior of the component, the easiest way to control what gets rendered is to use the metadata. Function <code>addMeta</code> lets you add or override the existing Field Metadata. For example: <code>poSection.addMeta("shipvia","hasLookup",true)</code> adds a hasLokup metadata attribute with the value true to the shipvia field. Note that this is a reserved metadata attribute for MaximoPlus, and designates that field  has a lookup. The attribute SHIPVIA has a ALN domain assigned to it, so MaximoPLus automatically adds the value list fields to the lookup. For all the other domain types you have to specify the list columns:<code>poSection.addMeta("shipvia","listColumns",["value","description"])</code> </p>
+	      <p>The other two metadata attributes, dialogTemplate and lineTemplate are required by the Framework7 template. When the user presses the lookup button, the new page with the lookup will open. We need to specify the Framework7 template for that page - that is <code>dialogTemplate</code> from above. Template <code>app.html</code> page already has the dialogTemplate defined, you may check it. The other template is the line template for the lookup, just like template we needed for the main list of POs. Append the line template "valueListTemplate" to the end of your app html page (you can be more creative with the template): </p>
+	      <pre><code></code>&lt;template id="valueListTemplate"&gt;
+   &lt;div&gt;{{VALUE}} {{DESCRIPTION}}&lt;/div&gt;
+&lt;/template&gt;</pre>
+	      <p>Note that the lookup is disabled for the read only records. To test it, navigate to some WAPPR record. You may also try to type the first couple of characters in the SHIPVIA field, and then navigate to the other field. For example, enter letter U in the field, and tap on some other field. That's right , the dialog opens - Maximo smart fill functionality is enabled out of the box.</p>
+	      <h3 id="qbesearch">Adding the QBE Search Page</h3>
+	      <p>It would be nice to add some search functionality to our app. If you are following the tutorail from the beginning, you might have noticed that the Grid control has the filter fields, same like in Maximo. Unfortunatelly, that is not possible to be used with the list control, we have to use the QbeSection, which resembles the Advanced Search in Maximo. First lets decide where we are going to display the search. MaximoPlus doesn't put any restrictions - you can be very flexible with your application layout.  We will add the search view in the list of views in the <code>app.html</code> page, and add the link to it in the Tab Bar. Add the following to the beginning of the "views tabs": </p>
+	      <pre><code>&lt;div id="view-search" class="view  tab"&gt;
+   &lt;div class="navbar"&gt;
+      &lt;div class="navbar-inner" data-page="indexsearch"&gt;
+         &lt;div class="left"&gt;&lt;a href="#" class="link qbe-clear-button"&gt;Clear&lt;/a&gt;&lt;/div&gt;
+         &lt;div class="center"&gt;Search Navbar&lt;/div&gt;
+         &lt;div class="right"&gt;&lt;a href="#" class="link qbe-search-button" data-view=".view-main"&gt;Search&lt;/a&gt;&lt;/div&gt;									
+      &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="pages"&gt;
+      &lt;div id="indexsearch" data-page="indexsearch" class="page"&gt;
+         &lt;div class="page-content"&gt;
+            &lt;div class="content-block" id="viewsearch-content"&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt; 
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	      <p>The layout for the search view is almost the same as for the main view. It has only one page where the QbeSection will be rendered. We added also the Search and Clear links in the toolbar. Now, add the following code to the app.js:
+	      </p>
+	      <pre><code>var poQbeSection = new F7QbeSection(poCont,["ponum","status","description","siteid","purchaseagent","vendor","orderdate","totalcost","shipvia"]);
+poQbeSection.renderDeferred(document.getElementById("viewsearch-content"));poQbeSection.addMeta("shipvia","hasLookup",true);
+poQbeSection.addMeta("shipvia","dialogTemplate","dialogQbeTemplate");
+poQbeSection.addMeta("shipvia","lineTemplate","valueListQbeTemplate");
+poQbeSection.initData();
+
+$$("#view-search .qbe-clear-button").on("click", function(ev){
+   poQbeSection.clearQbe();
+});
+
+$$("#view-search .qbe-search-button").on("click", function(ev){
+   poQbeSection.resetControl();
+   myApp.showTab("#view-template1");
+});</code></pre>
+	      <p>The first part is almost indentical to the ordinary Section initialization. We also added the lookup to the SHIPVIA attribute that will display the lookup. The difference is just in the template names. There is nothing much to be said about dialogQbeTemplate, you can find it in the app.html already. The other template will be discussed shortly, but first lets see what the second part of the snippet is doing. If you are familiar with jQuery, you will immediately understand the $$ function. It is the part of the DOM7, Framework7 library for DOM manipulation. In any case check the documentation on the Framework7 site. We may want to clear the exsting QBE and start from the scratch (there is a same functionality in Maximo) , so the first statement adds that action to the "Clear" link of the dialog. The second statement add the function to the "Search" link - it runs the resetControl function. This function resets the MboSet , and fetches the new valuues for the QBE user has defined. <code>myApp.showTab("#view-template1");</code> opens the other view when the user performs the search. Let's see now what is special about the Qbe Template:</p>
+	      <pre><code>&lt;template id="valueListQbeTemplate"&gt;
+   &lt;div&gt;{{#js_compare "this._SELECTED === 'Y'"}}&amp;#x2713;{{/js_compare}} {{VALUE}} {{DESCRIPTION}}&lt;/div&gt;
+&lt;/template&gt;</code></pre>
+	      <p>The template looks lot like a ordinary value list template, except for the <code>{{#js_compare "this._SELECTED === 'Y'"}}&amp;#x2713;{{/js_compare}}</code> part. It displays the check mark (&#x2713;) if the attribute _SELECTED is Y . That is the <b>special attribute</b> added automatically to the rest of the data coming from Maximo. When the row in Maximo is selected it is set to Y. You may want to use it also in ordinary lists, if your functionality depends on the selection in the MboSet. For the QbeSection value lists it is mandatory. If you are intrigued how this template actually works, you can find the details on the Framework7 site.</p>
+	      <p>We must not forget to put the link in the Tab Bar. Put the following link tag at the beginning of the <code>toolbar-inner</code> tag, and delete the last one pointing to <code>#view-template</code>. You may try to put the different icons and labels to get a grip on this layout.</p>
+	      <pre></code>&lt;a href="#view-search" class="tab-link"&gt;
+   &lt;i class="icon icon4"&gt;
+   &lt;/i&gt;
+   &lt;span class="tabbar-label"&gt;Search&lt;/span&gt;
+&lt;/a&gt;</pre></code>
+<h3 id="relcontainer">RelContainer</h3>
+<p>So far, we have been using just one type of the container, AppContainer (internally lists are using the ListContainer, but that didn't require any code to be written). It binds to the main application MboSet. What if we want to see the related MboSet data, for example the PO Lines? For that purpose we use the RelContainer. Put the following in the app.js </p>
+<pre><code>var poLineCont = new maximoplus.controls.RelContainer(poCont,"poline");
+var poLineList = new F7List(poLineCont,["polinenum","itemnum","description","orderqty"],20,"polinelisttemplate",view2,"index2");
+poLineList.renderDeferred(document.getElementById("view2-list-content"));
+poLineList.initData();
+
+var poLineSection = new F7Section(poLineCont,["polinenum","itemnum","description","linetype","orderqty","conversion","orderunit","unitcost","linecost","loadedcost"]);
+poLineSection.renderDeferred(document.getElementById("view2-content"));
+poLineSection.initData();</code></pre>
+<p>The RelContainer first parameter is the parent container, in our case AppContainer. Note that you can put the RelContainer to be the parent of the RelContainer, same like in Maximo where you can nest the relationships in your application. The second parameter is the relationship name as defined in the Maximo Database Configuration. When the record changes in the parent Container, RelContainer fetches the new data automatically. Apart from the RelContainer, there is nothing new in the snippet. You can try to add some lookups in the poLineSection for exercise. We also have to add the <code>polinetemplate</code> to the app.html:</p>
+<pre><code>&lt;template id="polinelisttemplate"&gt;
+    &lt;div&gt;Line: {{POLINENUM}} {{ITEMNUM}}&lt;/div&gt;
+    &lt;div&gt;{{DESCRIPTION}} {{ORDERQTY}}&lt;/div&gt;
+&lt;/template&gt;</code></pre>
+<h3 id="saving">Saving, calling the server actions, callbacks and promises</h3>
+<p>What if we the user wants to save the chages? There is the function <code>save</code> in the AppContainer. Let's add the save button to the navigation bar and bind the save function to it. The save button icon is contained in the icon font that comes with the template. Find the second navbar-inner div beneath the "view-template1" (the one with the cached class), and change it to the following code. We added here two more buttons , for the change status and the workflow so you don't have to do it again</p>
+<pre><code>&lt;div class="navbar-inner cached" data-page="index1"&gt;
+   &lt;div class="left"&gt;
+      &lt;a href="#" class="link back"&gt;
+         &lt;i class="icon icon-back back"&gt;&lt;/i&gt;
+         &lt;span&gt;Back&lt;/span&gt;
+      &lt;/a&gt;
+   &lt;/div&gt;
+   &lt;div class="center"&gt;View1 Navbar&lt;/div&gt;
+   &lt;div class="right"&gt;
+      &lt;a href="#" class="status-button"&gt;&lt;span class="icon-arr-3-rotate"&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="#" class="workflow-button"&gt;&lt;span class="icon-arr-shuffle"&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="#" class="save-button"&gt;&lt;span class="icon-com-disk"&gt;&lt;/span&gt;&lt;/a&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Instead of directly binding the save function to the button, we will make the function more intelligent:</p>
+<pre><code>$$("#view-template1 .save-button").on("click", function(ev){
+var currow = poCont.getCurrow();
+poCont.save()
+.then(function(ok){
+   poCont.moveToRow(currow);
+})
+.then(function(ok){
+   myApp.alert("Record has been saved");
+});
+});</code></pre>
+<p>There are lot of things going on here, so it is the time to introduce some new concepts. What we aim at is to save the record, then upon the saving move to the record that was current before the saving. Firstly, note that the container functions <code>save</code> and <code>moveToRow</code> are interacting with the server. All the container functions that call the server side are asyncronous. Maximoplus supports two standard javascripts patterns to deal with asynchnousy: promises and callbacks. The example above uses promises, and that is a recommended way to compose the asynchronous calls. If there was an error, and we didn't catch the error promise, MaximoPlus will use the standard error handlers. If you are not comfortable with the promises, you may use the callback functions. Every container function that calls the server has two optional methods: callback and errback, which are called in the case of success or error. The save function from above would look like:</p>
+<pre><code>poCont.save(function(ok){
+poCont.moveToRow(currow, function(ok){
+   myApp.alert("Record has been saved");
+}));</code></pre>
+<h3 id="statuschange">Changing the status, SingleMboContainer, extended Signature Security</h3>
+<p>The number of predifined server calling functions of the  Container Components is limited to the ones most frequently used. Soon you will learn about the general way to call the server side functions. Needless to say all is controlled with the Maximo security, so if the user didn't have access to save, system would throw an error. Why we needed to move to the currow row? Upon the saving, Maximo resets the MboSet and moves it to the first record. If we want to maintain the position we need to move to the old record position after the saving. There is another way to achieve this, more similar to the one in Maximo itself. We can use the <code>SingleMboContainer</code>. That is a special type of the RelContainer which has only one record and uses the same object as the parent container. When the parent container row is changed, SingleMboContainer automatically binds to the new object. Some Maximo functionality requires working with the single mbos, like the status handlers. The drawback of using the SingleMboContainer is that the changes in the child Container are not reflected automatically in the parent Container. In the following example we will create the Status Handler for the PO</p>
+<pre><code>$$("#view-template1 .status-button").on("click",function(ev){
+   var poSingleCont = new maximoplus.controls.SingleMboContainer(poCont);
+   var poStatusCont = new maximoplus.controls.RelContainer(poSingleCont,"POCHANGESTATUS");
+   var poStatusSection = new F7Section(poStatusCont,["status","memo"]);
+   var dialogTemplate = $$("#appDialog").html();
+   var dialog = myApp.popup(dialogTemplate);
+   var dialogContent = $$(dialog).find(".dialog-content")[0];
+   poStatusSection.addMeta("status","hasLookup",true);
+   poStatusSection.addMeta("status","dialogTemplate","dialogTemplate");
+   poStatusSection.addMeta("status","lineTemplate","valueListTemplate");
+   poStatusSection.addMeta("status","listColumns",["value","description"]);
+   poStatusSection.renderDeferred(dialogContent);
+   $$(dialog).find(".dialog-close-button").once("click",function(ok){
+      poSingleCont.dispose();
+      myApp.closeModal(dialog);
+   });
+   $$(dialog).find(".dialog-ok-button").once("click",function(ok){
+       poStatusCont.mbosetCommand("execute")
+       .then(function(ok){
+          poSingleCont.dispose();
+          myApp.alert("Status has been changed");
+          myApp.closeModal(dialog);
+       });
+   });
+});</code></pre>
+<p>We already disucessed why we needed the <code>SingleMboContainer</code>. We want to use the Maximo PO Status Change Functionality. For that we require the non-persistent MboSet <code>POCHANGESTATUS</code>, and we will use the relationship for that. The rest of the code is almost the same as before, except for the <code>      poStatusCont.mbosetCommand("execute")</code>. This is a very important new concept, so follow along carefully. Unlike Maximo, in MaximoPlus all the server side code is called directly by the method name. That means that the previous function calls <code>execute</code> method on the POCHANGESTATUS MboSet. Like most of the non-persistent MboSets, it is where the actual action is done. All the method calls are controlled by the Maximo security. If you tried to execute the code from above, you would get the "Access denied" exception. We need to put the action "EXECUTE" (everything is upper case in Maximo signature options) in Signature Security. In Maximo, we define signature options just for the main application objects (PO for this case), but the execute method is in the POCHANGESTATUS. In MaximoPlus we use the <code>DESCRIPTION</code> field to designate the relationship name. It requires the hash tag followed by the relationship name, i.e. <code>#POCHANGESTATUS</code>. For the method on the main object, you can put anything in description, just like in Maximo. If you need many actions in your app, you will need many EXECUTE options, but that column is unique in Signature Security. By simply putting EXECUTE_1, EXECUTE_2 and so on you will achieve uniqueness, underscore and after will be ignored by MaximoPlus. If you need to execute method on the Mbo, not MboSet, use the <code>mboCommand</code> function. If you don't want to start Maximo just to enter the signature security data, you may insert it directly on the database back end (example is for the Oracle database):<p>
+  <pre><code>insert into sigoption(app, optionname,description, esigenabled,visible,sigoptionid, langcode,hasld)
+values('PO','EXECUTE','#POCHANGESTATUS',0,0,sigoptionseq.nextval,'EN',0);
+
+insert into applicationauth(groupname, app, optionname, applicationauthid)
+values('MAXADMIN','PO','EXECUTE',applicationauthseq.nextval);</code></pre>
+
+<p>If you try to change the status now, you will not see the change in the main section. That is the consequence of using the SingleMboContaier. There are two possible remedies for this: <br/>
+  1) Remember the current row, like in the <code>save</code> example, then after the status change was finished, reset the <code>poCont</code> container and move to that row<br/>
+  2) Instead of binding the poSection to poCont, create the poSingleSection at the top level and bind the section to it. In this case, we should remove the SingleMboContainer from the status change action. This is approximately how it works in Maximo application itself.</p>
+<p>Both the ways are easy to implement, and we will not do it here, but it would be wise that you do it for exercise. Now let's move to the workflow example:</p>
+<h3 id="workflow">Workflow Component</h3>
+
+<pre><code>$$("#view-template1 .workkflow-button").on("click", function(ev){
+   var dialogTemplate = $$("#wfTemplate").html();
+   var dialog=myApp.popup(dialogTemplate);
+   $$(dialog).find(".dialog-close-button").once("click",function(ok){
+      myApp.closeModal(dialog);
+   });
+   var wfControl = new F7WorkflowControl(poCont,"POSTATUS");
+   wfControl.wfFinished = function(){
+      myApp.closeModal(dialog);
+   }
+   wfControl.routeWf();
+});</code></pre>
+
+<p>Again, we open a new dialog on click. The dialog template <code>wfTemplate</code> is already in the app.html that comes with the Framework7 template. Unlike the other Components it needs not to be rendered before the use. Constructor <code>F7WorkflowControl</code>has two parameters: Container and the Workflow Process name. Note that we don't need to use the SingleMboContainer here, but it would not be a mistake. Function <code>routeWf</code> starts the workflow if it hasn't been initiated, or continues with the workflow for the user. One more interesting thing in this example is that we have overriden the existing function wfFinished to suit our needs. It is obvious what it does here, and much more will be said about in the Concepts part of the documentation.</p>	 
+<h3 id="offline">Offline Mode</h3>
+<p>We have now the fully functional PO app with the worklfow and the status handler. Let's see how to enable the application to work in the offline mode. Add the following to the app.js, at the end of the <code>app</code> function:</p>
+<pre><code>poCont.setOfflineEnabled(true);
+poLineCont.setOfflineEnabled(true);
+
+document.addEventListener("online", function(ok){
+   maximoplus.core.setOffline(false);
+});
+
+document.addEventListener("offline", function(ok){
+   maximoplus.core.setOffline(true);
+});
+
+if(navigator.network.connection.type == Connection.NONE) {
+   maximoplus.core.setOffline(true);
+}</code></pre>
+
+<p>The two listeneres detect the change to online and offline, and set the application mode to online or offline. The third part is the Cordova plugin function, and it is used to set the application to the offline mode once the application starts, if the network connection is not available. Note that you need to add the plugin to your project, so run this command from the command line inside your project :<code>cordova plugin add cordova-plugin-network-information</code>. If you want to listen to test the offline and online changes with the above code you have to deploy the changes to the mobile device or emulator with : <code> cordova run ios</code> or <code>cordova run android</code> depending on the platform you use. The browser platform doesn't listen to the offline/online change, if you try to use the throttling from the Chrome Development Tools. The simple way to emulate the offline and online mode in the browser platform is to type directly into Chrome Developer Tools Console <code>maximoplus.core.setOffline(true)</code> and <code>maximoplus.core.setOffline(false)</code> </p>
+<p>So why MaximoPlus doesn't detect automatically the offline mode? We think that leaving this out of the library gives much bigger flexibility. You can decide when to go offline, maybe if the network is slow, or if it was on and off frequently for the last couple of minutes. Plus, you can add the notfications, and simulate the offline easily during the development as already discussed.</p>
+<p>Try to switch between the offline and online modes, and check what is going on. You can also try to make some changes in the offline mode, they will be posted to the server automatically once it goes online. When offline changes are posted to the server, they are not saved automatically. If you want to save or notify the user, you use the following utility function on AppContainer from Maximo: <code>offlinePostFinished</code>. It returns the array of results for the each object posted to the server - "ok" for the successful post, or the error details for the posts with the errors. Here is the example usage: </p>
+<pre><code>poCont.offlinePostFinished = function (res){
+   var errors = [];
+   if (res){
+       for (var i=0;i&lt;res.length;i++){
+          var _r=res[i];
+          if (_r[1]!="ok"){
+             errors.push(_r);
+          }
+       }
+   }
+   if (errors.length!=0){
+      displayOfflinePostErrors(errors);
+   }
+}
+
+function displayOfflinePostErrors(errors){
+   var errDiv=document.createElement("div");
+   errDiv.innerHTML="&lt;div&gt;OFFLINE POST ERRORS:&lt;/div&gt;";
+   for (var i=0;i&lt;errors.length;i++){
+      var e = errors[i];
+      var erEl=document.createElement("div");
+      errDiv +="&lt;div&gt;"+JSON.parse(e[1])[1]+"&lt;/div&gt;";
+   }
+   myApp.modal({title:"Errors during saving of offline changes",text:errDiv,
+   buttons:[{text:"OK"}]});
+} 
+</code></pre>
+
+<p>If you tried to navigate to the PO lines in the offline mode, you might have noticed that some lines  are available offline and some are not. By default MaximoPlus stores just the visited data to the offline storage. Unlike your Gmail or the similar offline enabled Mobile apps, MaximoPlus containers may point to the MboSets with milions of records, so it is not feasible to automatically store data for every possible case, unless it was already visited by the user. There offten will be the case though, that you need to preload the offline data, so the people using the MaximoPlus based app may finish their work even when offline. For that case we use the utility function <code>maximplus.controls.toOffline</code>. It has only one argument, container for which we want to get the offline data, and it returns the javascript Promise that is delivered once all the records in the Container and its children containers are loaded. Lets see the example:</p>
+<pre><code>var prom = poCont.setQbe("status","=wappr")
+.then(function(ok){
+   poCont.reset();
+})
+.then(function(ok){
+   maximoplus.controls.toOffline(poCont);
+})
+.then(function(ok){
+   myApp.addNotification({title:"Storing offline data finished"});
+});</code></pre>
+
+<p>We limited the MboSet to the WAPPR records, to get the reasonable number of records, and then moved it to the offline storage. Note that the storing is done in the background, without interrupting the user.  </p>
+<p>No offline Maximo solution would be complete without the offline value lists. Lists may be quite big objects in Maximo, so they have to be explicitely loaded. There are two helper functions for the list loading: <code>maximoplus.controls.listToOffline</code> and <code>maximoplus.controls.listToOfflineIfNotExists</code>. Second function is useful for the lists that are rarely changed, so the loading will be done just if the list is not already stored to offline. Lets see that in action. In the previous example, we assigned the whole flow to the promise. Let's for example start the list loading once the data loading is already done (this is not necessary though, as the data offloading may be done in parallel):</p>
+<pre><code>prom
+.then(function(ok){
+   maximoplus.controls.listToOfflineIfNotExist(poCont,"shipvia",["value","description"],"value");
+})
+.then(function(ok){
+   myApp.addNotification({title:"Storing offline lists finished"});
+}); </code></pre>
+
+<p>Both the functions have the same parameters: container, column for which the lookup is created, lookup columns, and the domain key column. Lets finish this offline digression here, and come back to the online features.</p>
+<h3 id="customize">Component Customization Basics</h3>
+<p>We will now explain the basics of the Component customization. Concepts Manuual will go into the details of creating the new components from the standard MaximoPlus arsenal, this is just the introduction. First, let's go back to the basics. Two fundamental visual components in MaximoPlus are Section and Grid. Section is composed of multiple Fields and displays one Maximo record. There are many type of fields in MaximoPlus - the most common one - TextField, but also RadioButton, CheckBox, ComboBox and more. Grid contains multiple Rows, each Row comprising of Fields. The most common type of Grid for the Mobile application is a List which doesn't display individual fields, only the Rows with the row data. There is one more general type of the component - ComponentAdapter, and it is mostly used to connect the third party components to MaximoPlus. The most common way of customizing the component is to change how its children components (Fields or Rows) are displayed and how they interact to the user input. For example, let's say we want to change one field from TextField to RadioButton. We will add <code>category</code> field to the poLineSection and change the section to create the radio button for that. Replace the line with poLineSection with the following:
+</p>
+<pre><code>var poLineSection = new F7Section(poLineCont,["polinenum","itemnum","description","linetype","orderqty","conversion","orderunit","unitcost","linecost","loadedcost","category"]);
+poLineSection.createField = function(metadata){
+   var attributeName=metadata.attributeName;
+   if (attributeName === "CATEGORY"){
+      return new F7RadioButton(metadata,"value","description",10);
+   }
+   return F7Section.prototype.createField.call(this,metadata);
+} </code></pre>
+
+<p>The first line just adds the category field to section. What about the <code>createField</code> function? What we see here in action is the javascript object property overriding. Essentially, there are two ways to customize MaximoPlus Component function in javascript: object property overriding and the javascript prototype inheritance. The second way is the object oriented javascript paradigm, and it will be discussed in more details later. We assume you are familiar with the object oriented javascript, if not there are many tutorials available on Internet. In the above snippet, if the attribute name is not <code>CATEGORY</code>, the default function of the  F7Section will be called. In other words, F7Section is a javascript class, poLineSection is the instance of the class. We have overriden the createField function on the object itself, but if the field name is not a <code>CATEGORY</code>, the original class function will be called.</p>
+<h3 id="changefield">Changing the behavior of the default text field</h3>
+<p>A little more complex example would be changing the behaviour of the text field itself. Take an arbitrary example: if the amount in the field is greater than 1000, color the text red. We will again augment the existing control, not create the new one. Paste the following snippet below the definition of the poSection:</p>
+<pre><code>poSection.createField = function(metadata){
+   var field = F7Section.prototype.createField.call(this,metadata);
+   var oldSetFieldValue = field.setFieldValue;
+   field.setFieldValue=function(value){
+   oldSetFieldValue.call(this,value);
+      var _val = value.replace(/,/g, "")
+      var el = field.getElement();
+      if (field.metadata.attributeName === "TOTALCOST"){
+      if (parseFloat(_val)&gt;1000){
+            $$(el).find("input").css({color:"red"});
+         }else{
+            $$(el).find("input").css({color:"black"});
+         }
+      }
+}
+return field;
+}</code></pre>
+<p>The code is almost self-explanatory. Let's highlight the couple of new things. <code> oldSetFieldValue.call(this,value);</code> -we call the original function on the instance, not the prototype. The reason is that we may have diferrent type of fields, so we can't use the setFieldValue on the prototype here, because we don't know the type (or class). <code>field.getElement()</code> - this returns the HTML DOM of the field. We need that to get the hold on the input text field of the Framework7 implementation and color the text red.  <code>var _val = value.replace(/,/g, "")</code> - Maximo represents the numbers with the thousands separators, and they need to be removed before the value is parsed by javascript. Note that a code above has a small bug - if the value is less that 1000 it will always color black, which is not accurate if the field is disabled. As an exercise, for that case set the color to be the same as the color of the label.</p>
+<h3 id="standalonecomp">Creating Standalone Component - Swipe to Delete List</h3>
+<p>To demonstrate the power of MaximoPlus, a more ambitious example is required. Say we need to delete the PO lines, how are we going to put that action in our UI? One common pattern in  mobile applications is to use the swipe interaction on the list to do some action, deletion is one of the most common. In order to achieve this, we will create the new type of the list that will show the delete icon when the user swipes the line to the right. This kind of customization deserves it's own Component that can be reused in the project. Put the following at the beginning of the app function:</p>
+<pre><code>function F7SwipeableActionLine(container, columns, mxrow, disprow){
+   F7Line.call(this,container,columns,mxrow, disprow);
+}
+
+goog.inherits(F7SwipeableActionLine,F7Line);</code></pre>
+
+<p>We defined the new line Component <code>F7SwipeableActionLine</code> that overrides the <code>F7Line</code>. The above is the pattern for the prototype inheritance in javascript. First comes the constructor, which has to call the original constructor and optionally add some logic. The <code>goog.inherits</code> is the utility function borrowed from the Google Closure library (included in MaximoPlus). It assign the parent prototype functions to the new type. You don't have to use this one, there are many ways to achieve it, as described in any tutorial about the javascript inheritance. Note that since inheritance is done at the run time, the Component declaration has to be written in the code before the function that uses the new Component, else the Component will not be ready when it is called. Now that we have the  new Component,  we need to add some custom logic to it:</p>
+<pre><code>F7SwipeableActionLine.prototype.createComponentDom=function(){
+   var el = document.createElement("div");
+   el.innerHTML='&lt;li class="swipeout"&gt; &lt;div class="swipeout-content"&gt; &lt;div class="item-content"&gt; &lt;div class="item-inner"&gt;&lt;div class="item-title"&gt;&lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="swipeout-actions-left"&gt; &lt;a class="delete-action" href="#"&gt;&lt;i class="delete"&gt;&lt;/i&gt;&lt;/a&gt; &lt;/div&gt; &lt;/li&gt;';
+   return el.firstElementChild;
+}
+
+F7SwipeableActionLine.prototype.setRowValues = function(colvals){
+   var template=this.getParent().lineTemplate;
+   $$(this.getElement()).find(".item-title").html(template(colvals));
+}
+
+F7SwipeableActionLine.prototype.setRowValue = function(column,value){
+   var ldata = this.getContainer().getLocalData();
+   var template=this.getParent().lineTemplate;
+   $$(this.getElement()).find(".item-title").html(template(ldata));
+}
+
+F7SwipeableActionLine.prototype.enteredDocument = function(){
+   var list = this.getParent();
+   var detailsPage  = list.detailsPage;
+   var view = list.view;
+   var el = this.getElement();
+   var fg = function(){
+      if (!$$(el).hasClass("row-deleted")){
+         goToPage(view,detailsPage);
+      }
+   };
+   
+   if (detailsPage){
+      $$(el).on("click",fg);
+   }
+   
+   $$(el).find(".delete-action").on("click", function(){
+         if ($$(el).hasClass("row-deleted")){
+            list.undeleteControlRow();
+         }else{
+            list.deleteControlRow();
+         }
+      });
+      
+   $$(el).on("open", function(){
+      $$(el).off("click",fg);
+   });
+   
+   $$(el).on("closed", function(){
+      $$(el).on("click",fg);
+   });
+
+}
+
+F7SwipeableActionLine.prototype.onSetDeleted = function(flag){
+   var el = this.getElement();
+   if(flag){
+      $$(el).find("i").removeClass("delete");
+      $$(el).find("i").addClass("undelete");
+      $$(el).addClass("row-deleted");
+   }else{
+   if ($$(el).hasClass("row-deleted")){
+      $$(el).find("i").removeClass("undelete");
+      $$(el).find("i").addClass("delete");
+      $$(el).removeClass("row-deleted");
+   }
+}</code></pre>
+
+<p>Let us check what each prototype function from above is doing. <code>createComponentDom</code> creates the HTML DOM required for the component. In our case that is a copy of the Swipeout control from the Framework7 site. We just added the default delete action class. <code>setRowValues</code> and <code>setRowValue</code> are the copy/paste from the F7Line code with  minor modifications. Both functions fill the template and put it inside its slot of the component DOM. <code>this.getElement()</code> is a utility function that returns the DOM of the component. It is not possilbe to change one field value in the template, so for the <code>setRowValue</code> we have to get the actual component data for all the fields and pass it to template. That is the role of the <code>this.getContainer().getLocalData();</code>. The main logic of the swipeout is in the <code>enteredDocument</code> function. The <code>enteredDicument</code> is called once the component is displayed on the screen, and it is usually used to put the listeners on the component. F7Line and the new F7SwipeableActionLine components both support the details page. The original behavior is to go to the details page once the user taps on the line. Our new control will follow the deletion pattern in Maximo: once the row is deleted, it will be visually marked, and it will be possible to do the undelete by tapping on the icon. If the record is deleted(as designated by <code>row-deleted</code> CSS class, navigation to details will be blocked. In the same logic, we added the "click" listener on the delete/undelete icon which call the <code>deleteControlRow</code> and <code>undeleteControlRow</code> action respectivelly. The <code>open</code> and <code>closed</code> events are fired when the user starts and stop the swipe. It is important to remove the default action during the swipe, or user will not be able to click on delete button. The last customized function of the component <code>onSetDeleted</code> is called when the actual deletion on the server(or offline) is finished. We use it to mark or unmark the row as deleted and display the appropriate icon. With our Line control finished, we need to create the new List control that uses it:</p>
+<pre><code>function F7SwipeableList(container,columns,norows, lineTemp,view,detailsPage){
+   F7List.call(this,container,columns,norows, lineTemp,view,detailsPage);
+}
+
+goog.inherits(F7SwipeableList,F7List);
+
+F7SwipeableList.prototype.getRowControl = function(mxrow,disprow){
+   return new F7SwipeableActionLine(this.container, this.columns, mxrow,disprow);
+}</code></pre>
+<p>This follows the same inheritance pattern as the Line control. The <code>getRowControl</code> function returns the Line control for the List. With this we finished our first fully functional control. Much more details about the controls lifecycle and the other control functions will be explained in the Concepts section and the Component customization tutorial. We covered here the main concepts and functions of the components though, and that is enough to give you  informations for creating your own components. As a rule of the thumb, you should create the new components only if they are going to be reused across the project. Otherwise, for the minor ad hoc changes in the component, use the component functions overriding as already shown. Let us use that now, change the poLineSection to :</p>
+<pre><code>var poLineList = new F7SwipeableList(poLineCont,["polinenum","itemnum","description","orderqty"],20,"polinelisttemplate",view2,"index2");</code></pre>
+
+<p>What if we want to add the new line? Simply add the new icon the navigation bar and bind one function call to it. In the app.html, add the following after the <code>View2 Navbar</code> div:</p>
+<pre><code>&lt;div class="right"&gt;
+  &lt;a href="#" class="add-button"&gt;&lt;span class="icon-db-table-plus"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+<p>The icon is inculded in the icon set that comes with the template. To add the listener, add the following after the <code>poLineList.initData()</code>:</p>
+<pre><code>$$("#view-template2 .add-button").on("click",function(ev){
+  poLineList.addNewRowToControl();
+});</code></pre>
+<h3 id="mbocommand">MboCommandContainer</h3>
+<p>We will conclude the tutorial with one more important concept. There are more components and concepts that will be introduced in the Concepts part. What we want to discuss now is the <code>MboCommandContainer</code>. Usually in Maximo and MaximoPlus, when some dialog or the complex action is required, virtual MboSet is created through relationship, as already shown in the Status Change example. Sometimes, you want to get the MboSet returned directly by the Mbo or MboSet method, and display or even change its content. For example, there is a method <code>getStatusHistory</code>. You would get the same result by using ordinary <code>RelContainer</code> with the <code>POSTATUS</code> relationship, but we just want to illustrate the concept. To define the <code>MboCommandContainer</code> for the status history, do the following:</p>
+<pre><code>var statusHistCont=new MboCommandContainer(poCont,"mbo","getStatusHistory");</code></pre>
+<p> The second parameter designate shall container call the Mbo or the MboSet method. The third one is the method name itself. As already discussed for all the server method calls Maximo signature security applies. This is the end of our first tutorial, and we will not go further with this container. As an exercise, repeat the same steps as for the Status Change: create the icon in the Navigation Bar, draw the dialog with the content of the <code>statusHistCont</code>, as a F7List.</p>
+
+<p>We reached the end of our tutorial. You may go now and open your <code>app.js</code> and check how much code there is. For all the concepts we introduced here: dialogs, offline, different type of containers, workflows, custom lists and so on, there should be no more than 300 lines of mostly boilerplate javascript code. If you like the power and expressivness of the MaximoPlus library, keep on reading the Concepts. If you have some original ideas about the mobile UI you want to create, and MaximoPlus doesn't support that, please let us know, we would like to hear from you.</p>
+<h3 id="polymertutorial">Polymer Template Video Tutorial</h3>
+<p>Below video is the complete tutorial for the Google Polymer based template. We will not introduce the new MaximoPlus concepts there. To check how the customizations are done, inspect the src folder of the Polymer template, each file is a different Web Component.</p>
+<iframe allowfullscreen width='852' height='479' scrolling='no' frameborder='0' style='border: none;' src='https://www.wevideo.com/embed/#746546335' allowfullscreen></iframe>
+
+	<h2>Concepts</h2>
+	<h3>Containers</h3>
+	<p id="contabout">Containers are the workhorses of the MaximoPlus based app. They communicate with the server, pass the data to and from its children components, handle the offline data storage, and do all the invisible low level work like AJAX, routing, data cache synchronization and so on. When the Container is initialized in the library, the conforming MboSet is opened automatically on the server. All the server calls go through the Container, and are controlled by the Maximo Signature Security. The communication between the Container and the server is bi-directional: Container is firing the AJAX calls to the server, and the server is streaming real time data changes back to the Container. What that means is that all the Mbo and Mbo value and flags changes are captured in real time and sent to the Container via Server Side Events or Long Polling. Container dispatch all the events coming from the server to its children. Children of the Container may be other Containers or the Components. </p>
+	<h4 id="appcontainer">AppContainer</h4>
+<p>The AppContainer is bound to the main MboSet of the application. All the server calls to the AppContainer are controlled by the Maximo Signature Security. It is initialized with:</p>
+<pre><code>var cont=new maximoplus.controls.AppContainer(mboName,appName);</code></pre>
+<p><code>mboName</code> is the main Object Name of the application. <code>appName</code> is the application name</p>
+<h4 id="relcontainer">RelContainer</h4>
+<p>RelContainer is another important type of the contanier. It is bound to the related MboSet as specified in the Maximo Database Configuration Relationship. For example, if the main Mbo is PO, we get the PO lines with the RelContainer. When the parent container moves to another record, RelContainer automatically re-connects to the new MboSet. Its constructor signature is:</p>
+<pre><code>var relCont = new maximoplus.controls.RelContainer(parentContainer, relName);</code></pre>
+<p>Here the <code>parentContainer</code> may be the AppContainer or another RelContainer, nesting is supported, just like in Maximo. Second parameter, <code>relName</code> is the relationship name from the Maximo database configuration</p>
+<h4 id="singlembocontainer">SingleMboContainer</h4>
+<p>This is the special type of the RelContainer that creates the MboSet on the server with the same type as the parent Container, and has only one record. Maximo web layer itself uses the similar concept for every single application - search page is bound to one MboSet, and the details are bound to the MboSet with one row. As already mentioned in tutorial, some Maximo functionality requires the use of the SingleMboSet- if you want to use the status change or you want to remain on the same row after the saving.</p>
+<pre><code>var smCont = new maximoplus.controls.SingleMboContainer(parent_container);</code></pre>
+<h4 id="uniquemboappcontainer">UniqueMboAppContainer</h4>
+<p>This is the special type of the Container, that also creates the MboSet with only one row with the specified unique id. It is used internally in MaximoPlus, but you may find it useful also:</p>
+<pre><code>var unCont = new maximoplus.controls.UniqueMboAppContainer(mboName, appName, uniqueId);</code></pre>
+<p>The first two parameters are the same like for the AppContainer. <code>uniqueid</code> is the id of the Mbo (poid, rfqid, assetuid...)</p>
+<h4 id="querymbocontainer">QueryMboContainer</h4>
+<p>It gives the list of queries for the application, it is initialized simply as:</p>
+<pre><code>var queryCont = new maximoplus.controls.QueryMboContainer(appContainer);</code></pre>
+<h4 id="bookmarkmbocontainer">BookmarkMboContainer</h4>
+<p>Gives the list of bookmarks for the application:</p>
+<pre><code>var bookmarkCont = new maximoplus.controls.BookmarkMboContainer(appContainer);</code></pre>
+<h4 id="inboxmbocontainer">InboxMboContainer</h4>
+<p>This container binds to the WFASSIGNMENT MboSet, with the active workflow assignments for the current user.</p>
+<pre><code>var inboxCont=new maximoplus.controls.InboxMboContainer();</code></pre>
+<h4 id="personmbocontainer">PersonMboContainer</h4>
+
+<p>Initializes the PERSON MboSet on the server, with the record for the current user.</p>
+<pre><code>var personCont = new maximoplus.controls.PresonMboContainer();</code></pre>
+<h4>MboCommandContainer</h4>
+<p>Executes the method on the parent Mbo or MboSet and returns the MboSet. The method being invoked is controlled by the Maximo Signature Security and has to return the MboSet. </p>
+<pre><code>var mboCommandCont = new maximoplus.controls.MboCommandContainer(parentCont, type, command, argControl);</code></pre>
+<p><code>parentCont</code> is the container whose method we are calling; type can be <code>"mbo"</code> or <code>"mboset"</code> and it specifies is the method on the MboSet or the Mbo; <code>command</code> is the name of the method we are executing. The optional argument argList is not used in most cases, but if you need to call the function with the optional MboSet as parameter, you would register that MboSet and then pass it as a parameter.</p>
+<h4 id="contfuncoverview">Overview of Container functions</h4>
+<p>The following list of functions are commong among all the type of Containers. Containers are the main way to interact with the server side, so most of the their functions are used for server calls. Server can be called from the Visual Components also, but the calls to the server from the Visual Components are limited to the basic ones: move to the row, fetch , save , and couple more of them. Also, the calls from the visual controls don't return promises or have callbacks, so they are not composable. </p>
+<p>But why do we need to call the Container functions at all? If the child Components are tied to the Container, all the calls to the server are happening automatically without the developer interventions. Sometimes, we need to do something more complicated though. In our tutorial, we wanted to limit the POs in the search to WAPPR, before saving to offline; so we did setQbe, then reset and then storing to offline. As you already know all the server calls in any javascript program are always asynchronous and we need callbacks or promises to call them in sequence. You will always use container function calls for such cases.</p>
+<p>We already discussed that every container server calling function has optional  callback and errror callback arguments, and that it returns promise. Callbacks will be called in case of success and error callback will be called in case of the error. Using promises is a preferred way to compose the server function calls, so usually these callback functions will be omitted. Here is the typical signature of the Container function:</p>
+<pre><code>function(arg1, arg2, ..., callbackF, errbackF); //returns Promise
+//example:
+setQbe(column,value,callbackF,errbackF);</code></pre>
+<p>Just a reminder example for composing the calls via promises:</p>
+<pre><code>cont.setQbe("status","=APPR")
+.then(function(ok){
+    cont.reset();
+    })
+.then(function(ok){
+    cont.getRowCount();
+})
+.then(function(count){console.log(count);}, function(err){console.log("error:"); console.log(err);});</code></pre>
+	<p>Regardless of do we use the callbacks or promises, if there was an error during the server call, the end user should be notified. It would be tedious to force the developer to notify the user in case of the error for the every server function call. Catching the error promise should be used just for your internal program logic, not for notifying the user. By default you don't need to do anything, the global error handler will display the error message. However, if you need to control how the Container displays the error message, you should override the <code>errbackHandler</code> function of the container. </p>
+	<pre><code>cont.errbackHandler=function(err){
+   myOwnErrorHandler(err);
+}</code></pre>
+	<p>There are two similar Container functions which are called before the server call starts and after the call is finished:<code>prepareCallHandler</code> and <code>finishCallHandler</code>. You will  use these to display your custom wait spinner, progress bar or similar. By default when the server action is called, the wait spinner will be called as for every other action. If you need to display the spinner in some other place, or remove  use these two functions </p>
+	<pre><code>cont.prepareCallHandler=function(){
+   displayMySpinnerSomewhereElse();
+};
+cont.finishCallHandler=function(){
+   removeTheSpinner();
+};</code></pre>
+<p>We will describe in the next part the main Container functions. For the sake of brevity, just the function name and the signature will be given. Keep in mind that in reallity these are the prototype functions, so the exact signature would be : <code>AppContainer.prototype.functionToDescribe(arg1. arg2,...); </code>, and that it would be used just on the instances of the container like <code>myContainerInstance.functionToDescribe(arg1,arg2,...)></code>. Note also that the functions not listed below are the internal functions and should not be used by the end user(they may not be visible in the future relases). All the functions that end wiht the <code>callback,errback</code> are the server calling functions and return the promise. Callback and errback are the optional parameters and it is recommended that they be omitted and the promises be used instead.</p>
+<pre><code>mboCommand(command, argControl, callback,errback);</code></pre>
+<p>Calls the mbo method on the current MboSet bound to the Container. Maximo signature security applies as already discussed, more about the security will be said in the separate section. Also, as already mentioned, callback and errback are optional parameters, and the use of promises is recommended instead.</p>
+<pre><code>mboSetCommand(command, argControl, callback,errback);</code></pre>
+<p>Same as previous, just for the MboSet, not the Mbo</p>
+<pre><code>getChildren()</code></pre>
+<p>This is not a function calling server, so there are no callbacks, and it doesn't return Promise. It returns the javascript array of all the Visual Controls bound to this Container. The child Containers are not returned, there is another function for that.</p>
+<pre><code>setOfflineEnabled(enableFlag)</code></pre>
+<p>The function enables the offline data storage for the container. The <code>enableFlag</code> is a boolean value - true for enable and false for disable. If the container has child containers, the function has to be called on all of them if we want them offline</p>
+
+<pre></code>saveOfflineChanges(callback, errback);</code></pre>
+<p>The function returns promise. When the transition from the offline to the online mode has finished, the data will be posted to the server, but it will not be saved automatically. The application may be written to call this function in the background, or has the user action button for saving the changes, it is completely under the developer control.</p>
+<pre><code>rollbackOfflineChanges(callback,errback)</code></pre>
+<p>Rollbacks the changes posted to the server, returns Promise</p>
+<pre><code>offlinePostFinished(resultArray)</code></pre>
+<p>This is a callback function, it is called when posting of the offline data to the server has been finished.The <code>resultArray</code> is the array with the results, each result may be either "OK" string or the error. </p>
+<pre><code>afterFetch(callbackF)</code></pre>
+<p>This function is used to call the callbackF once the fetching of the data for the container has been finished. May be useful if we want to get the local data for the container.</p>
+<pre><code>getFieldLocalValue(fieldName)</code></pre>
+<p>All the data that is fetched from the server is kept in the local cache, and is acailable for reading. The <code>fieldName</code> field has to be defined as an argument for one of the child controls, otherwise no data will be available. Returns javascript String.</p>
+<pre><code>getRowCount(callback, errback)</code></pre>
+<p>Returns the promise with the number of rows in the Container. Callback function is also called with the number of rows as an argument.</p>
+<pre><code>setOrderBy(column, callback,errback)</pre></code>
+<p>Sorts the MboSet bound the container. <code>column</code> is the column name with the optional <code>DESC</code> for the descending sort. Example:<code>cont.setOrderBy("changedate DESC");</code> . Returns Promise.</p>
+<pre><code>setQbe(column,value,callback,errback);</code></pre>
+<p>Sets the qbe on the container for the given column, returns promise. The QBE syntax is same like on Maximo server side.</p>
+<pre><code>setValue(column,value,callback,errback)</code></pre>
+<p>Sets the value on the column of the current Mbo for the Container, returns Promise</p>
+<pre><code>delRow(callback,errback)</pre></code>
+<p>Deletes the current row of the container, returns Promise</p>
+<pre><code>undelRow(callback,errback)</pre></code>
+<p>For already deleted row, undo the deletion, retunrs Promise.</p>
+<pre><code>fetchData(start,numrows,callback,errback);</pre></code>
+<p>Fetches the data from the MboSet bound to the container, <code>start</code> is the starting row of the fetch, and the <code>numrows</code> are the number of rows to be fetched. Returns promise(or callback) with the fethed data. Usually you will not need this function, as it will be called in the background by the visual components.</p>
+<pre><code>reset(callback,errback)</code></pre>
+<p>Calls the reset method on the MboSet for the container</p>
+<pre><code>getRelContainer()</code></pre>
+<p>Returns the javascript array of children Containers.</p>
+<pre><code>addNewRow(callback,errback);</code></pre>
+<p>Adds the new row at the end of the MboSet bound to the Container.</p>
+<pre><code>addNewRowAt(rowNum,callback,errback);</code></pre>
+<p>Adds the new row at the <code>rowNum</code> position. </p>
+<pre><code>moveToRow(rowNum, callback,errback);</pre></code>
+<p>Moves the MboSet bound to Container to the <code>rowNum</code> row. </p>
+<pre><code>getCurrow()</code></pre>
+<p>Returns the current row of the Contaienr</p>
+<pre><code>getLocalData(rowNum)</code></pre>
+<p>Gets the local copy of the data for the <code>rowNum</code>th row. The parameter is optional, if nothing is passed, it will return the data for the current row. It returns the javascript object with attributes as the keys and the string values. The attributes will be all the columns registered by the Lists, Sections , etc plus the special columns: <code>_SELECTED</code> is the row selected or not, <code>uniqueid</code> uniqueid of the row (like <code>poid, assetuid, locationid...</code>)</p>
+<pre><code>getQbe(callback,errback)</code></pre>
+<p>Returns the Promise or callback with the javascript object, where the attributes are the keys and the values are the current server QBEs.</p>
+<h3>Visual Components</h3>
+<p id="viscompabout">These are the components where the actual UI happens, we introduced them from the very beginning of the tutorial: List, Section, Fields ... Unlike the Containers, Components are open for customization, and we already have shown all the major ways to customize the component. In the tutorial, we have used one of the templates from the MaximoPlus demos. All the templates are derived from the base Components. Base components are all in the namespace <code>maximoplus.controls</code>, for example <code>var grid=new maximoplus.controls.Grid(myCont,["field1","field2"..."fieldn"]);</code>. Base componets focus  on functionality, to use them in the mobile project, you have to customize their layout for the mobile, as it is already done for our templates. You will rarely use them directly, except for the quick tests, but the concepts will be the same for the customized Controls. For the rest of the Concepts material, we will omit the <code>maximoplus.controls</code>, except for the examples. </p>
+<h4 id="viscompstruct">Structure and hierarchy of Components</h4>
+<p>The use of the MaximoPlus library assumes at least the basic knowledge of Maximo. In Maximo the sets of data are organized in  MboSets. Each MboSet is composed of Mbos, and Mbos have attributes with the field level classes. Components in MaximoPlus are directly bound to Maximo server objects, and we have the Components tied to MboSets, Mbos and Fields. They follow the same hierarchy as the server side components. Grids and Lists are bound to MboSet - they are composed of Rows. Rows are bound to the Mbos of the MboSet. Rows are further composed of Fields which conform to the server side Fields (for Mobile Lists usually the fields are ignored, they are relevant just for the Grids). Sections are bound to the Mbos, each Section consists of Fields , just like Rows. These two Components - Grid and Section forms the backbone of the MaximoPlus UI system. Other type of Controls will be discussed later.</p>
+<h4 id="viscompcustom">The main principles of Components customization</h4>
+<p>As already mentioned, original library components are not ready for the Mobile application use. As a helper, we have provided the templates for the several popular Mobile HTML5 frameworks and libraries - Framework7 was used in demo. Why the customized versions are not the part of the library? We beleive there are many excelent library on the market, and customizing MaximoPlus to use them is trivial. By using the coolest library of the day, your application can always have the trendy look and feel. As a rule of the thumb, when picking the HTML5 library, always prefer the ligther one, and if possible stay away from the heavy frameworks. That means - prefer Polymer to Angular, Framework7 to Ionic. Many times just the simple CSS3 library is enough, like the included Topcoat template. You don't need the heavy framework, becuase all the frameworkey things are already included in MaximoPlus, and adapting the logic to use the external framework is often difficult. That said, it is of course doable, and if you have prescribed standards for libraries and frameworks you can use what ever you want provided there is no server-side dependency. </p>
+<p>In the tutorial, we already mentioned the two main ways of customizing the Component - method overriding and prototype inheritance. If you are not familiar with the prototype based inheritance , there are many tutorials on Internet, and it is recommended to read one first. The first way, method overriding, is mainly used for the quick ad-hoc code fixes, while for the creation of the componene from scratch we use the second option - protoype inheritance. There is really nothing more to be said about the inheritance mechanism than that it is already said in <b>Component Customization Basics</b> from the tutorial, so refer to it for examples. In order to better understand what and how to customize, we need to understand the lifecycle of the Components first.</p>
+<h4 id="complc">The Components Life Cycle</h4>
+<p>First, the component is created with the Component constructor, like : <code>var myGrid=new maximoplus.controls.Grid(myContainer, ["field1","field2",.."fieldn"], noRows);</code>. Both the Section and Grid/List components have the list of columns in the constructor. Component registers conforming MboSet on the server side, and adds the columns. After that is finished, the javascript Promise contained in the special attribute <code>deferred</code> of the component is resolved, and the Component is ready for use.</p>
+<p>As a second step, we need to draw the Component somewhere on the screen, and for that we use the <code>renderDeferred</code> Component function, like in <code>myGrid.renderDeferred(myPlaceholder);</code> The <code>myPlaceholder</code> is the DOM element that will contain the rendered component. The function draws the Component once the <code>deferred</code> Promise is resolved, hence the name (<code>render</code> function is the internal function and should not be used)</p>
+<p>After the Component is on the screen, it creates the listeners for the user interaction (like click to change row of the List, change to change value of the Text Field) and for communicating with the parent Container. When attaching the listeners is done, the <code>enteredDocument</code> function of the Component is called, and that is good place to add the Component logic which require the Component to be fully functional:</p>
+<pre><code>myGrid.enteredDocument=function(){
+    console.log("myGrid has entered the document, it is ready to be used");
+}</code></pre>
+<p>Like in Maximo itself, component doesn't initialize the data automatically. We use the <code>initData</code> function for that:<code>myGrid.initData</code>. The function is of course just applicable for the top level Components (like Grid/List or Section), the children get theirs data from the parent Component.</p>
+<p>Unlike Maximo with it's static layout, you are free to add or remove the Components at your will during the runtime. To remove the component from the screen, you use <code>dispose</code> function. Example:<code>myGrid.dispose();</code>. The function removes the component and all its children from the screen, and deregister them. The function is also available for the container, and it will remove all the related containers and its beloging Components.</p>
+<h4 id="compskeleton">The Component Skeleton</h4>
+<p>We already mentioned that <code>renderDeferred</code> draws the Component in the DOM, but where we tell what is rendered? Obviously, the List is composed of Rows, and the Section of Fields, so the child elements will be rendered inside the parent Component. We didn't say how the structure that defines the Component layout and its insertion points look like. For example, for the Framework7 section, in the template you will find :</p>
+<pre><code>F7Section.prototype.createComponentDom = function(){
+  var el=document.createElement("div");
+  el.innerHTML="&lt;div class='list-block'&gt; &lt;ul&gt;&lt;/ul&gt;&lt;/div&gt;";
+  //this is required by F7
+  return el.firstElementChild;
+}</code></pre>
+<p><code>createComponentDom</code> function always draws the DOM as requied by the UI library. The HTML code from above is a direct copy/paste from the Framework7 documentation. Usually the libraries will have the corresponding structues for the List, Sections (it is usually called "Forms" in most of the libraries), if not you need to create your own. <code>createComponentDom</code> function exists also for Rows and Fields, and completely same logic is applicable, check the templates for the examples. Once the component DOM is create d, we can get it always with <code>getElement()</code> function. The function is common for all the type of Components.</p>
+<h4 id="gridsandlists">Grids and Lists</h4>
+<p>Grid doesn't have the <code>createComponentDom</code> function, because the component is more complex than other Components. It is designed to function like the Table control in Maximo, and it has the label row , where the labels of the search fields are displayed. QBE row with the search fields. placeholder for the Grid data rows. paginator that displahys the number of rows and the displayed rows on the page. For mobile application you will rarely use the Grids directly(although they are used in Maximo Everyplace) - you will use the more lightweight Lists . However, if you are creating the app designed for tablets, the kiosk app, or the standalone web app, it may be useful. Check the Bootstrap example in demos for the Bootstrap based Grid control. </p>
+<pre><code>mainGridFrame()</code></pre>
+<p> This is the skeleton function for the Grid component, returns the Grid skeleton DOM . As always, the implementation depends on the underlying UI framework. In the MaximoPlus library it just creates the HTML table element. The customization example for Framework7:</p>
+<pre><code>F7List.prototype.mainGridFrame = function(){
+  var el=document.createElement("div");
+  el.innerHTML="&lt;div class='list-block'&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/div&gt;";
+  var ret= el.firstChild;
+  this.getElement().appendChild(ret);
+  return ret;
+}</code></pre>
+<p>This is the trivial implementation, similar to the one we had for the Section. The only importatn difference is that the mainGridFrame function is called after the createComponentDom (createComponentDom is not a public function for Grids), and the main component element already exists, we have to add the grid frame to that.</p>
+<pre><code>gridToolbar()</code></pre>
+<p>Grid toolbar is the part of the Grid with the buttons for the previous and next page, previous and next record, and displays the currently displayed rows plus the total number of rows for the Grid. In all our examples and templates for the Mobile app, we don't need it, as infinite scrolling is used. It may be useful sometimes though to display the number of rows to the user. When overriding the  function <code>gridToolbar</code> , developer is responsible for binding the events to buttons and calling them on user action. The relevant Grid functions for that are:</p>
+<pre><code>pageNext()</code></pre>
+<p>Displays the next page of data. If for example, grid has 10 records per page, and it was displaying records 1-10, after the call it will display the rows from 11 to 20</p>
+<pre><code>pagePrev()</code></pre>
+<p>Displays the previous page</p>
+<pre><code>moveControlNext()</code></pre>
+<p>Moves the current row of the control to the next row</p>
+<pre><code>moveControlPrev()</code></pre>
+<p>Moves the current row of the control to the previous row. This and the previous function are available for all the Components, not just Grid.</p>
+<p>You can find the example for the Grid toolbar in the Bootstrap example from the demo folder. Once the toolbar is available, MaximoPlus will send the information to the Grid every time the data is fetched:</p>
+<pre><code>updatePaginator(firstRow, lastRows, rowsTotal);</code></pre>
+<p>If you have a custom toolbar, you have also to override this Grid function to display the current pagination and the total number of rows. <code>firstRow</code> is the first row displayed in the current page of the grid, <code>lastRow</code> is the last row, and <code>rowsTotal</code> is the count of rows for the MboSet.</p>
+<pre><code>buildLabelRowDom();</code></pre>
+<p>The function builds the Grid Label Row - the part of the grid with the clickable attribute labels, with the same functionality as in Maximo: when the user clicks on the label, it sorts ascending by the column, and displays the sort indicator(arrow). Next click, and the sort is descending. It also has a checkbox for selecting all the rows on the page. For the mobile Lists this is never used, so you have to override this to an empty function, for example: </p>
+<pre><code>F7List.prototype.buildLabelRowDom = function(){}</code></pre>
+<p>If your mainGridFrame is a HTML table, you don't have to override the function. If you want to customize it though, you have to customize the <code>GridLabelRow</code> Component. That is the the special type of the Row control comprised of HeaderCheck control, and the GridLabel controls for the each field declared in the Grid. We will briefly describe how to customize it, you can find the details in the Bootstrap examole. Before that, we need to mention one more function:</p>
+<pre><code>headerRow()</code></pre>
+<p>The function internally calls the <code>buildLabelRowDom</code> , and render it on the top of the Grid. As for the buildLabelRowDom, for the Lists, you need to override the function with an empty one</p>
+<p>GridLabelRow is the extended Row Component, let's first describe the common functions</p>
+<pre><code>createRowHolder()</code></pre>
+<p>Original Grid function returns the HTML <code>tr</code> DOM element - the skeleton for the Grid. Override it to change the behavior</p>
+<pre><code>createFieldHolder</code></pre>
+<p>The skeleton or wrapper for the Row Field Element. The Label Row is the first row in the structure, so it returns the HTML <code>th</code> element. For other rows it returns <code>td</code>.</p>
+<pre><code>createField(fieldMetadata)</code></pre>
+<p>Creates the Field of the row for the given field metadata. Metadata concept is described thorougly in the tutorial. For the <code>GridLabelRow</code> it returns the <code>HeaderCheck</code> component for the special attribute <code>_SELECTED</code>, and <code>GridLabel</code> for others. For the Lists override it to empty function. The following customizable field functions will be both for the HeaderCheck and for the LabelRow component, so to avoid the confusion full signature will be used.</p>
+<pre><code>maximoplus.controls.HeaderCheck.prototype.createComponentDom()</code></pre>
+<p>Returns the HTML DOM of the check box</p>
+<pre><code>maximoplus.controls.HeaderCheck.prototype.getActiveDom()</code></pre>
+<p>Unlike <code>getElement</code> that returns the full DOM of the element, this returns just the active part, the one that should have attached listener with the action function. This is the very important function for all the Field types. Both of the above functions are used also for the GridLabel components, with the diferrent logic of cource, GridLabel renders the text of the attribute with aditional decorations (underline if the field is sortable, arrows for descending or ascending sort). </p>
+<pre><code>maximoplus.controls.GridLabel.prototype.getDefailtCss()</code></pre>
+<p>The function returns the CSS style attached to the field - <code>gridlabel</code> or <code>gridlabel-sortable</code> for the field that can be sorted. If you can define your field UI to use just one CSS for this, you don't need to change the presentation logic. Otherwise you can override this function or <code>createComponentDom></code> function. The following two standalone functions (not in the Component prototype) are used to add and remove the sort labels:</p>
+<pre><code>maximoplus.controls.addSortCss(labelControl, sortOrder)</code></pre>
+<p>If you want to display the different type of arrows for the sort use this function. Originally it adds <code>sortasc</code> or <code>sortdesc</code> to the labels.</p>
+<pre><code>maximpplus.controls.removeSortLabels(grid)</code></pre>
+<p>Remove all the sort labels for the grid, it is called when the sorting column is changed. Now lets move to the second row in the Grid - the QbeRow. It is functionally completely equivalent to the QbeSection defined in the tutorial. The functions used to create QbeRow and attach it to the Grid are:</p>
+<pre><code>buildQbeRowDom()</code></pre>
+<p>which returns the <code>GridQbeRow</code> instance, and</p>
+<pre><code>qbeRow()</code></pre>
+<p>that calls the previous function, and attach the result to the table. Both functions shouuld be overriden with the empty functions for Lists. It has all the common functions as for the ordinary Rows. The only function you should customize is <code>createField(columnMetadata)</code> and it should return the <code>GridQbeField</code> or its customized version.</p>
+<p>Now, lets go back to the main part of the Grid - the data rows. When the data is fetched, Grids calls the <code>getRowControl</code> for every row it is appended to Grid. Here is the signature:</p>
+<pre><code>getRowControl(mxrow)</code></pre>
+<p>The <code>mxrow</code> argument is the row index in the MboSet. starting from zero. The control returns instance of the GridRow that contains the mxrow attribute. Usually you want to put the mxrow attribute somewhere hidden in the Row DOM to make the row listening easier. This function should always be overriden for the Mobile Lists. We will now discuss what an implementation of the GridRow must have both for mobile List and Grid, and then check the options exclusevily used for the Grid. The following are the prototype functions of the GridRow: </p>
+<pre><code>onSetReadOnly();</code></pre>
+<p>When the Mbo is set to be readonly, this callback function is called. For the List, override this to be an empty function. For Grid, it should disable the input for all the fields in the Row</p>
+<pre><code>setRowValues(colvals);</code></pre>
+<p>When fetching the data is finished, the callback with the values is called - <code>colvals</code> is the map with the attribute names as keys and the values. You can find the example in the mpf7.js file of the Framework7 template. This function should be overriden just for Lists, Grid use it internally to dispatch the values to the fields.</p>
+<pre><code>setRowValue(column,value);</code></pre>
+<p>Appart from fetching, the mbo value can be updated by some operation in the server code, and the change in the value is streamed to the MaximoPlus client. This function also should not be overriden for Grids. The previous two functions have their conforming functions for flags:<code>setFieldFlags(colflags);</code> and <code>setFieldFlag(column,flag);</code>. Since the Lists are always read only, you should override them to empty functions, while you should not change them for Grid. </p>
+<pre><code>highlightSelectedRow()</code></pre>
+<p>When the current row in the Mbo is change by user navigation or in the code, the server sends back the new position in the MboSet. MaximoPlus calls this function to highlight the selected row. You may choose to add the custom decorations in this function to your GridRow or not based on your prefrence. When the row is selected, the other rows have to be "unselected" and the <code>unhighlightSelectedRow()</code> is called. </p>
+<pre><code>listenRow(callbackFunc);</code></pre>
+<p>This is the very important function for both the List and Grid. In the original version it listens for the click event on the row DOM element, and then calls the <code>callbackFunc</code>. The argument function is a MaximoPlus interanl function that calls the server function to navigate to the row and perform some more internal work on Grid and GridRows. If you need to use some other event other than "click" (it is usually "tap" for the Mobile), or you want to listen on the part of the GridRow DOM, override this function.</p>
+<pre><code>createField(columnMetadata);</code></pre>
+<p>We already discussed this function for the GridLabelRow. For the ordinary data row it should return the GridInputField or its customized version. For the mobile it should be overriden to empty function. </p>
+<p>So far, we have been discussing the row functions that can be customized, now we will list the ones that are not customizable, but may be useful to you</p>
+<pre><code>getFieldLocalValue(column);</pre></code>
+<p>All the fetched data from the server is stored in the cache, and it can be read by several functions, above is one of them. When you read the local data, be aware that it reads the current data, so you may want to synchronize the reading of the data with the end of the fetching - there is the useful function <code>afterFetch</code> on the Grid.</p>
+<pre><code>getMaximoRow()</code></pre>
+<p>Gets the current Maximo row in the MboSet for the GridRow</p>
+<pre><code>getField(column)</code></pre>
+<p>Gets the child Field Component by the column name</p>
+<p>Now lets go back to the Grid functions</p>
+<pre><code>addFieldAction(columnName, listenF, actionCallback)</code></pre>
+<p>You may add the field listeners in Grid also, which means you can have lookups in the rows or do wathever you can imagine with the field listeners(for example display the custom message when user hovers over the field). The problem is that the Rows and Fields in the Grid are constantly destroyed and created, and we can't just add the listener by attaching it to the field directly. This function will assure that every time the field with the <code>columnName</code> column is created, the listener <code>listenF</code> on it is activated that calls the <code>actionCallback</code> function on user action. There is the sibling function also <code>removeFieldAction(column, actionCallback, removalF)</code>, where <code>removalF</code> should remove the listener from the field.</p>
+<pre><code>addNewRowToControl()</code></pre>
+<p>Adds a new row to the Grid or List</p>
+<pre><code>moveControlToRow(rowNum)</code></pre>
+<p>Moves the underlying mboSet to the <code>rowNum</code> row.</p>
+<pre><code>fetchMore(numRows)</code></pre>
+<p>This is the function that is useful mostly for Lists that implement the "Infinite List" or "Fetch More" pattern. When the user swipes up at the end of the list, Infinite List implementation calls this function and fetches <code>numRows</code> more. You should keep the number small so the user gets the feeling of the smooth scrolling. Check the function <code>addInfiniteScroll</code> in mpf7.js for an example.</p>
+<pre><code>initData()</code></pre>
+<p>Initialize the fetch of the data for the Grid or List</p>
+<h4 id="viscompsect">Section</h4>
+<p>Section is the set of Field controls that displays the data for the current Mbo in the underlying MboSet. It is the most commonly used Component in the MaximoPlus UI. Section is created with :  </p>
+<pre><code>var mySection=new maximoplus.controls.Section(myContainer,["field1","field2"..."fieldn"]);</code></pre>
+<p>Of course, renderDeferred has to be called like for every other Component</p>
+<pre><code>createComponentDom()</code></pre>
+<p>Creates the skeleton of the Section Component.</p>
+<pre><code>getRootElementForChildren()</code></pre>
+<p>If the Section DOM element doesn't have the trivial structure, returns the DOM part of it where the Fields should be inserted.</p>
+<pre><code>createField(columnMetadata)</code></pre>
+<p>Creates the Field based on the column metadata. You will override this function to return the cutomized Field based on the metadata. For example it returns your customized CheckBox if the type is YORN, otherwise returns customized TextField</p>
+<pre><code>setColLabel(column, label)</code></pre>
+<p>Changes the label of the Field with the <code>column</code> attribute.</p>
+<pre><code>initData()</pre></code>
+<p>Initializes the Section data</p>
+<p>One more common Control we use is the QbeSection, you have already saw the example in the Tutorial. Visually, the QbeSection is identical to Section and you need to override the same functions when customizeing it.</p>
+<h4 id="fields">Fields</h4>
+<p>Field are the lowest level Component in the Visual Compoents hierarchy, used by GridRow and Section controls. These are the Controls that should be returned by the <code>createField</code> function of the GridRow and Section. We will start with the most common type of the field:</p>
+<h5>TextField</h5>
+<pre><code>TextField(metadata)</code></pre>
+<p>is the constructor of the TextField. All the Field level Components are passed the <code>metadata</code> in the constructor</p>
+<pre><code>createComponentDom()</code></pre>
+<p>As usual, creates the skeleton DOM of the TextField</p>
+<pre><code>getActiveDom()</code></pre>
+<p>Returns the active part of the TextField, on which the listener will be attached.</p>
+<pre><code>showLookup()</code></pre>
+<p>This function should not be overriden. Based on the metadta of the Field it displays the Date/DateTime lookup for the Date or DateTime fields, Long Description lookup for the Long Description Fields, and the Lookup Lists for the fields with the ALN domain or with the metadata <code>hasLookup</code> and <code>listColumns</code> set. Usually the listener to activate this function is set in the <code>enteredDocument</code> function of the field, like in the following example from the Framework7 template:</p>
+<pre><code>F7TextField.prototype.enteredDocument = function(){
+  maximoplus.controls.TextField.prototype.enteredDocument.call(this);
+  var that=this;
+  var el = this.getElement();
+  if (this.metadata.hasLookup){
+    var iconButton = $$(el).find(".item-media");
+    $$(iconButton).on("click", function(ev){
+      that.showLookup();
+    });
+  }
+
+}</code></pre>
+<p>Internally the columns to be passed to the Lookup List are determined based on the <code>listColumns</code> field metadata. When the metadata <code>hasLookup</code> is set to true, the Maximo smart fill functionality is enabled. </p>
+<pre><code>getListDialog(listContainer, listColumns);</code></pre>
+<p>This should return the customized instance of the <code>ListDialog</code>. MaximoPlus intarnally creates the Container that is bound to the MboSet returned by the Value List of the column. For the ALN domain it is the ALN Domain MboSet, for Table and Synonym Domains it returns the domains bound to the Field; in general it binds to the MboSet returned by the <code>getList</code>  Field server method. MaximoPlus passes this contanier to the <code>getListDialog</code> function as the first argument. The second argument is the javascript arrya of columns - for ALN and Synonym domain it will always be <code>["VALUE","DESCRIPTION"]</code> , for other domains it will be whatever is defined in the <code>listColumns</code> field metadata. We will discuss later the List Dialogs, but in general they are the "visual wrappers" around the Grid/List bound to the listContainer - for the Mobile app it may open the new page with the dialog, or display the popup; for web it is almost always the popup displayed next to the screen.</p>
+<pre><code>showLdLookup()</pre></code>
+<p>If the field is the Long Description field, the method should create the visual component that should be be bound to the Long Descritpion Field</p>
+<pre><code>showDateLookup()</code></pre>
+<p>and</p>
+<pre><code>showDateTimeLookup()</code></pre>
+<p>These two functions will be called internally by the <code>showLookup()</code> if the type of the field is DATE or DATETIME. It can be any type of visual Component, check the example in mpf7.js. What is important is to set the value of the field in the format Maximo understands. For this there are the following helper functions: </p>
+<pre><code>maximoplus.controls.getDateString(year,month,day)</code></pre>
+<pre><code>maximoplus.controls.getDateString(year,month,day, hours,minutes)</code></pre>
+<pre><code>maximoplus.controls.getDateString(javascriptDate)</code></pre>
+<p>The arguments of the functions are self explanatory. The <code>javascriptDate</code> is the javascript Date object</p>
+<pre><code>localValue()</code></pre>
+<p>Gets the cached value of the field, don't override the function.</p>
+<pre><code>changeMaximoValue(value)</code></pre>
+<p>Initiates the server action for changing the field value. It is automatically called when the user changes the field value. You want to call this function if you want to change the value of the field from the outside. For example, you created the Date Lookup, and after the user picks the date , you call the function to actually update the value. Function is not meant to be overriden.</p>
+<pre><code>setFieldValue(value)</code></pre>
+<p>This function is the opposite of the previous one. When the value comes from the server, it calls this function to update the field. You may want to override it to match your implementation, but you don't have to if the active dom is a <code>input</code> HTML element.</p>
+<pre><code>getColumn()</code></pre>
+<p>Gets the name of the column, same as <code>field.metadata.attributeName</code></p>
+<pre><code>errbackHandler(command, error)</code></pre>
+<p>Every Component can be assigned the Error Handler, as already discussed in tutorial. The one used for TextField is special as it does the following: 1)replaces the entered value with the value from the cache 2) select the field, and 3)displays the error message using global error handler. If you want to change the errBackHandler(for example to display error next to the field), you may want to call one of these functions:</p>  
+<pre><code>replaceFromLocal()</code></pre>
+<p>and</p>
+<pre><code>setFocus()</code></pre>
+<p>We have two more function to indicate the status change in the field:</p>
+<pre><code>setRequired(flag);</code></pre>
+<p>This should mark the field as required, and you override the function to set the customized visual designation for the required field</p?
+<pre><code>setReadonly(flag)</code></pre>
+<p>Sets the field to be read-only or editable.</p>
+<p><code>TextField</code> is the basic Field Component, other Field types are in essence the customized TextFields. We will describe just the basic differences, but all the major TextField functions will be inherited.</p>
+<h5>CheckBox</h5>
+<p>As already discussed, checkbox is in essence just the cutomized TextField. To create the custom CheckBox, just a couple of functions need to be overriden. As an example, below is the full implementation of the Topcoat CheckBox component:</p>
+<pre><code>TopcoatCheckbox = function (metadata,id){
+  maximoplus.controls.CheckBox.call(this,metadata,id);
+}
+
+goog.inherits(TopcoatCheckbox, maximoplus.controls.CheckBox);
+
+TopcoatCheckbox.prototype.createComponentDom = function(){
+  var label= this.metadata.title;
+  var el=document.createElement("div");
+  el.innerHTML ='&lt;div&gt;&lt;label class="topcoat-checkbox"&gt;&lt;div class="checkbox-header"&gt;'+label+'&lt;/div&gt; &lt;input type="checkbox"&gt; &lt;div class="topcoat-checkbox__checkmark"&gt;&lt;/div&gt;&lt;/label&gt;&lt;/div&gt;';
+  return el.children[0];
+}
+
+TopcoatCheckbox.prototype.getActiveDom = function(){
+  return this.getElement().children[0].children[1]; //this will be listened and written to
+}
+
+TopcoatCheckbox.prototype.getLabelDom = function(){
+  return this.getElement().children[0].children[0];
+}
+
+TopcoatCheckbox.prototype.setRequired = function(flag){
+  setLabelAsRequired(this.getLabelDom(),flag);
+}</code></pre>
+
+<h5>Picker</h5>
+<p>Picker is the Component that displays inline the list of values, like the Radio Button or Combo Box. We will discuss the radio button later, but first let's review the concepts of the general Picker.</p>
+<p>Since it displays the inline list of values, the picker has the three layer of components: Picker itself that is bound to the Mbo Field, Picker List that is bound to the List of Values Mbo on that field, and the Picker List Item - representing the Rows of the Picker List. </p>
+<pre><code>maximoplus.controls.AbstractPicker(metadata,pickerkeycol,pickercol,norows)</pre></code>
+<p>As the name suggests, this is the abstract control for which you have to provide the implementation. Two implentations already exist in the library: Radio Button and the Combo Box. The <code>pickerkeycol</code> is the key value of the picker, i.e. the value that is sent to maximo once the user picks the value.<code>pickercol</code> is the value that is displayed in the Picker List. The number of rows displayed in the Picker List is restricted with <code>norows</code> attribute.</p>
+<pre><code>displayPickerHeader(metadata)</code></pre>
+<p>You may or may not want to display the label above the Picker List, override this function to do it.</p>
+<pre><code>getPickerList(column,listContainer,pickerKeyCol,pickerCol,noRows)</code></pre>
+<p>This should return the instance of the PickerList control. Basically it is just the special kind of the Grid control simplified for this purpose.</p>
+<h5>PickerList</h5>
+<pre><code>maximoplus.controls.PickerList(column,container,pickerkeycol,pickercol,norows)</pre></code>
+<p>This is again the abtract List, and the functions you need to implement are listed below</p>
+<pre><code>createMainListDom()</code></pre>
+<p>Creates the skeleton of the List</p>
+<pre><code>getRowControl(thiw rowNum)</code></pre>
+<p>Returns the instance of the Picker List Item Component</p>
+<pre><code>listenListAction(callbackFunc)</code></pre>
+<p>By defualt, it is bound to the "click" event of the Picker List element. If you want to change the event or what it triggers, you should change this function</p>
+<pre><code>getRowControlFromAction(event)</code></pre>
+<p>Because the listener is defined on the PickerList, you have to implement this function to get the Picker List Item control from the event.</p>
+<h5>PickerListItem</h5>
+<pre><code>PickerListItem(container,pickerkeycol,pickercol,mxrow)</code></pre>
+<p>In general this is just the overriden GridRow, and you have to override the <code>createComponentDom</code> and <code>getActiveDom</code>. The three following functions are what distuingish PickerListItem from the ordinary GridRow:</p>
+<pre><code>pick()</code></pre>
+<pre><code>unpick()</code></pre>
+<pre><code>setRowPickerValue</code></pre>
+<p>You have to override the <code>pick</code> and <code>unpick</code> functions to customize how the Picker List Item is designated as selected, and how the selection is removed. The <code>setRowPickerValue</code> should be overriden to display the value of the Picker List Item. If you remember the constructor of the Picker List, you know that we defined the picker key and the picker value column. If for example we want to display the ALN Domain in the Picker List, the pickerkeycol would be the <code>VALUE</code> column, and the pickercol would be the <code>DESCRIPTION</code>.</p>
+<p>For the complete example, check how the Radio Button is implemented in the mpf7.js of the Framework7 template. As an exercise, try to create the Combo Box control for the Framework7 by overriding just the AbstractPicker, PickerList and PickerListItem components.</p>
+<h5>FieldComponentAdapter</h5>
+<p>If you want to create the new type of the Field control (for example let the user pick the number of stars rating instead of entering the value), in general you could achieve it by just overriding the TextField. It is often easier to override the abstract <code>FieldComponentAdapter</code></p>
+<pre><code>FieldComponentAdapter(metadata)</code></pre>
+<p>This is the abstract constructor that needs to be overriden in your new Compoent</p>
+<pre><code>setFieldValue(value)</code></pre>
+<p>Override this function to display the value in your Component. For example, if the value is 3, display 3 full and 2 empty stars.</p>
+<pre><code>setRequired(flag)</code></pre>
+<p>If you want to indicate that the field is required when the required flag is set to true, override this function</p>
+<pre><code>setReadOnly(flag)</code></pre>
+<p>When the flag is set to true, the input should be disabled, and you need to handle that in your Component</p>
+<pre><code>addListeners()</code></pre>
+<p>Override the function to add the listener on your Component. Here you have to define how you should update the value. For example, you will listen on the "tap" event, and then check which star in the row was tapped  on: if it is the third one, you will set the value of the field to 3. To update the value call the familiar function:</p>
+<pre><code>changeMaximoValue(value)</code></pre>
+<h5>QbeField</h5>
+<pre><code>maximoplus.controls.QbeField(metadata)</code></pre>
+<p>The above is the constructor of the QbeField, the Field type that is used by the QbeSection Component. There is no difference with regards to customization between QbeField and TextField, you can customize it in the same way the ordinary TextField is customized. The only difference is in its internal functions.</p>
+<h5>GridInputField</h5>
+<p>Same goes for the <code>GridInputField</code> - the Field type used by GridRow - there is no external difference between TextField and it</p>
+<h5>GridQbeField</p>
+<p>Used by the GridQbeRow component. It automatically listen to the user pressing down ENTER key to perform the search(like in Maximo). If you use the Grid components, and don't want this behavior, you can use QbeField instead. From the customization perspective it is same as the TextField</p>
+<h5>VirtualActionField</h5>
+<p>We already mentioned that the Rows and Fields in the Grid are destroyed and getting created every time the Container is reset, and the new data comes from the server. It is not easy therefore to attach the listener on the Field to do some custom action. One example is to add the delete/undelete button to the Grid Row, like there is in Maximo. We use VirtualActionField for this purpose. It is created with the attached custom listeners to it. The Virtual Action Field is created bu calling the following method on the Grid:</p>
+<pre><code>grid.addVirtualColumn(position,column,metadata)</code></pre>
+<p>The name of the columns is <code>column</code>, and it can have any alphanumerical value. Preferably it would designate what your column is doing. The <code>position</code> is the position of the field in the array of existing columns. If for example we had 3 columns in the Grid before calling this function, and we want to add the virtual field to the end, the index will be 3, as that is the fourth element counting from zero. The <code>metadata</code> has to have the folling structure: </p>
+<pre><code>{css:"fieldCss",
+action:functiontoExecuteOnUserEvent,
+callback:functionToExecuteOnCallback}</code></pre>
+<p>By default, VirtualActionField listens for the "click" event on the Field element. If you need to change that, override the following function:</p>
+<pre><code>listenAction(actionF)</code></pre>
+<p>Here is the example of the VirtualActionField in action, we will add the delete/undelete field to the Grid:</p>
+<pre><code>grid.addVirtualColumn(5,"delaction",
+  {css:"delcss",
+   action:function(field){
+      if (field.getParent().getFieldLocalValue("deleted")){
+        field.undeleteControlRow();
+      }else{
+        field.deleteControlRow();
+      }
+    },
+   callback:function(field){
+    if (field.getParent().getFieldLocalValue("deleted")){
+      //this doesn't look logical, but the callback is called immediately after the action, before the data has been updated in local
+      field.getElement().classList.remove("undelcss");
+      field.getElement().classList.add("delcss");    
+    }else{
+      field.getElement().classList.remove("delcss");
+      field.getElement().classList.add("undelcss");    
+    }
+    }});
+</code></pre>
+<p>The code is self-explanatory. Keep in mind that the <code>deleted</code> (note that it is in lower case, upper case are the real Maximo columns) is the special column name in local data that designates that the row is deleted. Other special columns we have mentioned are <code>_SELECTED, rownum, uniqueid</code>.</p>
+
+<h4 id="abstractlistdialog">AbstractListDialog</h4>
+<p>The implementations of this Component are used frequently in Mobile apps, so lets recap what it takes to display the List Dialog for the Field. We already discussed that in the Tutorial and in the Field Concepts. First, Field has to have the Value List attached to it: any type of domain (ALN,Synonym, Table, Crossover..) , or in general case the <code>getList</code> field method has to return the MboSet with the Value List. That should already be familiar to you, becuase the same requirements are there in the Maximo Application Designer itself. We further need to customize the folowing Field function: </p>
+<pre><code>getListDialog(listContainer, columns)</code></pre>
+<p>This function should return the instance of the AbstractListDialog, and render it in the UI. Note that the TextField by default already returns the implementation, but it doesn't really fit into the Mobile UI. Once we have the above function finished, you can show the List Dialog in two ways:<br/>
+  1.If the Field metadata has the <code>hasLookup</code> and the <code>listColumns</code> metadata contains the array of columns(it is automatically set for ALN domain), call the <code>showLookup</code> Field function<br/>
+  2.Call the <code>showList(columnNames)</code> function directly<br/>
+
+Of course, for either of the functions you should provide the listener on the Field DOM that triggers them. Lets see what functions you need to customize to create the custom List Dialog. First comes the constructor:
+ </p>
+<pre><code>maximoplus.controls.AbstractListDialog(container,listContainer,field,dialogCols);</code></pre>
+<p> The <code>container</code> is the original Mbo Container for the field. The more important one is the <code>listContainer</code>, the one that you will use to get the actual data in the UI.<code>field</code> is the original Field component for which we display the list, and the <code>dialogCols is the array of the columns defined for the dialog.</code></p>
+<pre><code>drawDialog()</code></pre>
+<p>For the Mobile apps it usually opens the new page with the List, for the tablet and web apps it can be the popup dialog next to the field. You can take a look at the Framework7 implentation of this function that uses the internal Framework7 library function that draws the popup as the new page for the mobile, but locally for the tablet app.</p>
+<pre><code>closeListDialog()</code></pre>
+<p>In this function we shall implement the removal of the dialog from the screen. When the user picks the value from the non-QBE lookup, this function is automatically called.</p>
+<pre><code>getSelectableGrid(listContainer,dialoCols,selectableF)</code></pre>
+<p>This should return the instance of the List with the special property <code>selectableF</code> set to the attribute with the same name. When the user selects the row from the List, this function will be called.</p>
+<pre><code>drawGridInDialog(listContainer, listGrid)</pre></code>
+<p>Once we have the instance of the Dialog and the List, we need to place the List in appropriate place in the Dialog</p>
+<h4 id="abstractqbelistdialog">AbstractQbeListDialog</h4>
+<p>It is the version of the List Dialog used for the search. The UI customization is done in exactly the same way. There are only two differences. First, user can pick many QBE rows, not just one, and therefore you have to create the listener on the Dialog close element or button to call the <code>closeListDialog</code> function. Second, to actually set the QBE on the field and perform the search, and close the list dialog, you should listen for the user action(for example press on the button), and then call the <code>defaultAction</code> dialog function.</p>
+<p>For the complete implementation of the both types of dialogs, refer to the Framework7 template implementation.</p>
+<h4 id="gldialog">GLDialog</h4>
+<p>This special type of dialog mimics the GL dialog from Maximo itself. The constructor is:</p>
+<pre><code>maximoplus.controls.GLDialog(field,orgID)</code></pre>
+<p><code>orgId</code> is the organization for which the GL is defined, and the <code>field</code> is the Field Component for which the actual Dialog is bound.</p>
+<pre><code>getGlDialog(chooseFunc)</code></pre>
+<p>Override the function to render or open the GL Dialog. The <code>chooseFunc</code> should be called when the action is taken by the user, and the actual GL account picking is finished. It writes the chosen GL to the field. </p>
+<pre><code>getPickerPlaceholder(dialog)</code></pre>
+<p>and</p>
+<pre><code>getAccountPlaceholder(dialog)</code></pre>
+<p>The GL dialog resembles one in Maximo: we have the "account placeholder" part with the GL segments - chosen segments will have the numbers, while yet to be chosen will have the questionmarks. When the user chooses the segment, the list in the "picker placeholder" displays the list of values for the current segment. This should be the familiar behavior from Maximo. In not sure how it looks like, run the Inventory demo for the Topcoat implementation of the GL Dialog. These functions have the dialog DOM as argument, and should return the placeholder DOMs </p>
+<pre><code>listenSegment(segment, segmentno, callbackF)</code></pre>
+<p>In the account placeholder, GL account is broken in segments. You need to define the listener on the segment DOM to call the callbackF on the user action.</p>
+<pre><code>getGlPickerList(glContainer,pickerCols,pickerF)</code></pre>
+<p>This should return the List of Values for a given segment of GL. You should create the List with the <code>pickerCols</code> attributes, defined on the <code>glContainer</code> container, and with the selecable function set to be <code>pickerF</code>, i.e. <code>glPickerList.selectableF=pickerF</code></p>
+<pre><code>displayGlSegment(dialog,segmentNo,segmentLength,segmentValue, segmentName, segmentDelimiter,active)</code></pre>
+<p>The original function displays the GL Segments in the same way as in Maximo - numbers in one row with the dashes that separate them. If you want to have a different presentation override this function. <code>segmentNo</code> is the numer of the segmnet starting from 0, <code>segmentValue</code> is the value it should display, <code>segmentName</code> is the name of the segment as defined in Maximo GL configuration, <code>segmentDelimiter</code> is the delimiter for the segments, also defined in the Maximo configuration,and the <code>active</code> is the number of the active segment.</p>
+<pre><code>highlightGLSegment(segmentDOM)</code></pre>
+<pre><code>unhighlightGlSegment(segmentDOM)</code></pre>
+<p>The above two functions are available only if the <code>displayGlSegment</code> is not overriden, use them to add/remove the custom CSS to ghe segment DOM </p>
+<p>For the full implementation, check the Topcoat and the Polymer template.</p>
+<h4 id="workflowcontv">WorkflowControl</h4>
+<p>This is one of the most powerful features of MaximoPlus, the full featured Workflow Component that even  works in the offline mode, as it will be explained in the Offline section of Concepts. Here is the constructor:</p>
+<pre><code>maximoplus.controls.WorkflowControl(appContainer, processName)</code></pre>
+<p>Workflow Control has to be defined on the <code>appContainer</code> application container, and we have to know the <code>processName</code>. As already discussed in the tutorial, to use it all you have to do is to call <code>wfControlInstance.routeWf();</code> function on the instance of the WF Control, and it will contnue the workflow if there are assigments for the user and the application, or start the workflow for a given process. All the dialogs, actions and choises will be displayed automatically by the Component. You just need to customize the UI. Unlike other top level UI Components, there is no <code>renderDeferred</code>, becuse the Workflow may finish without any need for user interaction. When the dialog needs to be rendered, the <code>getWfDialog</code> function will be called:</p>
+<pre><code>getWfDialog()</code></pre>
+<p>Like for the other types of dialogs, this should render the dialog skeleton somewhere in the UI, and for the Mobile app usually it will open another page.</p>
+<pre><code>setWfDialogTitle(title)</code></pre>
+<p>MaximoPlus sends the title for a given step in the workflow, same like in Maximo,i.e "Complete Workflow Assignment", "Reassign", etc. If you want to display that information, override this function.</p>
+<pre><code>addWfDialogAction(dialog,funcCallback,label,key)</code></pre>
+<p>At a given step of the Workflow, certain actions will be available, like "OK" to continue, "Reassign" to reassign the workflow to another user, or "Cancel" to cancel the Workflow interaction. Usually you use this function to render the Button control in underlying UI library and bind a listener to it that executes the <code>funcCallback</code> function. The default button <code>label</code> and <code>key</code> are set by MaximoPlus.</p>
+<pre><code>getWfSection(container, objectName, inputFields)</code></pre>
+<p>This is another important function to be customized. You need to return the instance of the Section that will be rendered in the Workflow Control. The fields sent are defined in the underlying Mbo used by the Maximo workflow. For all the workflow actions, the field "ACTIONID" should be entered by user to choose the user action. In most cases, it should be displayed as the Radio Button, same like in Maximo. Here is the example from the Polymer template: </p>
+<pre><code> PolymerWorkflowControl.prototype.getWfSection  = function(container, objectName, inputFields){
+  //the purpose of this is to put the user-defined section (here the polymer section in the workflow control
+  //we will follow the example already developed  in the Topcoat workflow control
+  var s = new PolymerSection(container, inputFields);
+  s.createField = function (metadata){
+    var attrName = metadata.attributeName;
+    if (attrName == "ACTIONID"){
+      return new PolymerRadioButton(metadata, "actionid", "instruction",10);
+    }
+    return new PolymerTextField(metadata);
+  }
+  if (objectName == "REASSIGNWF"){
+    s.addMeta("assignee", "hasLookup",true);
+    s.addMeta("assignee", "textIcon","search");
+    s.addMeta("assignee", "lookupTemplateId","generaldialog");
+    s.addMeta("assignee", "lookupContentId","personlist");
+    //same code as in column-lookup.js
+  }
+  return s;
+} </code></pre>
+<p>As you can see from above, the <code>objectName</code> parameter is userful to determine how our Workflow Control Seciton will look like. In the above snippet, we add the lookup on the <code>"assignee"</code> field, so the user can pick who it reassigns the Worklow to.</p>
+<pre><code>addWfSectionToDialog(dialogDOM, section)</code></pre>
+<p>Override this to render the <code>section</code> Component into appropriate place in the dialogDOM</p>
+<pre><code>cancelWf()</code></pre>
+<p>When the "Cancel" action is chosen by the user, this function is called. Use it to close the dialog.</p>
+<pre><code>setWarnings(warnings, body, title)</code></pre>
+<p>In addition to the error messages coming from Maximo, the workflow control displays the messages in case of success or the business error defined in the Workflow. The <code>warnings</code> is the array of warnings coming from Maximo after the workflow action has been executed, <code>title</code> and <code>body</code> are the titles of the Workflow message for the header and the body part of the Warning message. Use this to notify the user of the Workflow step completion.</p>
+<pre><code>addWfMemoGrid(dialogDOM, memoContainer)</code></pre>
+<p>If you want to render the Memos for the already processed workflow steps somewhere in the Component DOm (similar to the control in Maximo), override this function - <code>memoContainer</code> is the Container bound to the MboSet with the Memo data </p>
+<pre><code>wfFinished()</code></pre>
+<p>When routing the workflow, user can have many interactions with the Workflow Component, one for each step in the workflow where the user interaction is required. Once no  inteaction from the user is required, this callback function is called. You may use it to close the WorkflowDialog. Keep in mind that usually the warnings are also send at the same time, so you may want to close the dialog after some delay if the warnings are displayed on the dialog itself.</p>
+<h3 id="offlilneconcepts">Offline</h3>
+<p>The controls in MaximoPlus are designed to be fully functional when ever it is possible even if the device is not online. Offline mode is fully automated, but also highly controlable. In essence, when the device is offline, when ever is possible, all the network calls are replaced with the calls to the Offline system, so the component will not notice there is any difference. Of course, just the subset of all possible server calls is available during the offline mode - manipulating the data (fetching, moving to the other record, deleting, adding), while the calls to the server commands are not; you will not be able to issue the item in inventory for example when offline. If you still want to do it, the recommended way is to remember there was the action, and notify the user when the device goes online and the server command is executed. It is NOT recommended to try to replicate the server behavior on the client side, because the errors will emerge inevitably.</p>
+<p>The underlying engine for the Offline Subsystem is the standard IndexedDB database. All the major Mobile OS vendors have the implementation of the IndexedDB in their WebView engine which is used by  Cordova. At the time of the writing, IOS IndexedDB implementation is still not usable, so you may want to use the IndexedDB plugin cordova plugin that fails back to WebSQl database for IOS.</p>
+<p>To have the Offline support enable for the application, you have explicitely to enable it for all the containers that should store the data offline:</p>
+<pre><code>myCont.setOfflineEnabled(true)</code></pre>
+<p>For the reasons already stated in tutorial, you have to listen for the event when the device goes offline or online, and to set MaximoPlus to offline or online mode. To set the device online of offline, you use:</p>
+<pre><code>maximoplus.core.setOffline(flag)</code></pre>
+<p>If you forgot how the listening is done, check the tutorial again. In the same part of the tutorial we mentioned something that we will repeat now. The default behavior of MaximoPlus is to store offline just the records that have been visited. The reason for this is that MboSets can have millioons of records, and any general way of storing the rows is not feasible. If you need to store the complete MboSet offline data with all the child Containers, you have to explicitely call the following standalone function :</p>
+<pre><code>maximoplus.controls.toOffline(container)</code></pre>
+<p>The function will fetch all the data from the Container, and all its child Containers. Because of this, you have to be careful, and restrict the number of rows prior to using this function. The function returns javascript Promise that is resolved once the fetch and storing the data is finished. The function will run in the background, and the user can use the application even though the data is being fetched in the background.</p>
+<p>By default lists are not stored offline automatically, for the same reasons as before, as they can have more records than it would be feasible to fetch and store in some bearable time period. For storing the lists, you can use the following functions:</p>
+<pre><code>maximoplus.controls.listToOfflineIfNotExist(container,column,listColumns,listKey);</code></pre>
+<p>and</p>
+<pre><code>maximoplus.controls.listToOffline(container,column,listColumns,listKey);</code></pre>
+<p>The first function is interesting, as it may be used for the value lists that will not be changed, or are changed very rare. It creates the offline list storage and stores the data just if the list is not available. The second function always stores the list. The arguments in the functions are: <code>container</code> - container of the field whose list we want to store offline, <code>column</code> - the field name for which we store the list, <code>listColumns</code> - the array of columns that need to be fetched and stored offine, and the <code>listKey</code> - the column from the list that will be copied to the field once the user picks the value.</p>
+<p>Once that the MaximoPlus goes to online mode, all the changes are automatically sent to the server. When all the data is sent to the server, the callback method is called on the main contanier:</p>
+<pre><code>offlinePostFinished(result)</code></pre>
+<p>The <code>result</code> is the javascript array with the results of the data send. If the data is sent successfully for the record, "OK" will be returned, otherwise the error is returned. Refer to the tutorial for the way to display the errors. Note that the data is not saved automatically, you have the full control over that, you may save it in the background, or give the user save option.</p>
+<p>One interesting thing we didn't mention in the tutorial is that the WorkflowControl works in the offline mode. Before we can use the Workflow Control in the offline mode, we need to preload the workflow data. We use the following standalone function for that:</p>
+<pre><code>maximoplus.controls.multiWFPrefetch(appContainer, processName)</code></pre>
+<p>The Workflow Control is defined always on the  <code>appContainer</code> AppContainer, and for the workflow process with the name <code>processName</code>. So, what exactly does this function do, and how the offline workflow control works? MaximoPlus stores all the possible user interactions for all the rows in the container until the first server call (for example change the status) in Workflow definition. Be careful whan opassing the container, becuase it will fetch all the records in the container, and all the workflow data. Youmay want to use the separate container if you want to restrict this to some rows. When the user routes the workflow in the offline mode, the library will guide the user until it reaches the point where the server call should be made. Then it notifies the user that the workflow will continue when the device goes online, When the device goes online it will send the user interactions to the server, and continue the workflow from where it stopped. If we have the offloaded workflow data, we may initialize and route the workflow contol with the same commands as if it was online.</p>
+<p>If you designed the workflow with the idea that the user may go offline, you may use one more feature of the library, it will notify when the user in the Offline Mode has reached the <code>STOP</code> node in the workflow. For that we need to customize the global function(more about the global functions later):</p>
+<pre><code>maximoplus.offline.globalFunctions.handleWFOnStopNode()</code></pre>
+<p>If reaching the STOP node in the offline mode happens only if something goes wrong, you can use this for special actions: initiate the phone calls, send SMS and similar. For example, you define the steps in the workflow for the work order and commencing the work; when the user comes to the site, he routes the workflow in even though he is offline, and reach the stop node because the work conditions are not met. Find the demonstraction of this in the OfflineWF demo under cordova_apps. For the offline workflow implementation, we also need to override the following global functions:</p>
+<pre><code>maximoplus.offline.globalFunctions.handleWFAlreadyFinished()</code></pre>
+<p>If the user tries to route the workflow in the offline mode after he already reached the end node, we need to make a notification</p>
+<pre><code>maximoplus.offline.globalFunctions.handleWFContinueOnOnline()</code></pre>
+<p>When the user reaches the stage of the workflow where the server interaction is required, we need to display the message</p>
+<pre><code>maximoplus.offline.globalFunctions.handleNoWFData()</code></pre>
+<p>If the workflow prefetch was not done, there is no offline workflow data, and the user tries to route the workflow in offline mode, we need to notify him that the offline workflow data was not loaded and he can't proceed with the workflow</p>
+<h3 id="errorhandling">Error Handling</h3>
+<p>We already discussed in the Tutorial and Container Concepts how all the server calls are done. When control is bound to the Container, it calls internally the Container functions that communicate with the server. Since the communication is happening in the background, it is not possible to directly catch the errors, we use the Error Handlers instead. Even if we use just the Containers to perform some work in the background, it would be tedious to capture the error just to display it on the screen. If you however need to analyze the error and continue the action in the container then you should use Promises as already explained in the Container section. We will discuss here just the Error Handlers. The Error Handlers are the callback functions that we can attach to the Visual Component or the Container. They are not attached by default. What happens if there is the error on the server, and there is no Error Handler attached? The error propagates up the hierarchy, until the first error handler is found. For example, user tries to enter the value in the TextField, and gets the error from the server, MaximoPlus looks for the error handler in the TextField, then in the Section, and then in the Container. If no error handler is found, MaximoPlus uses the global error handler. You should always override the following global function to display the error messages to the user:</p>
+<pre><code>maximoplus.core.globalFunctions.handleErrorMessage(text)</code></pre>
+<p>For example, this is how it was customized in Framework7</p>
+<pre><code> maximoplus.core.globalFunctions.handleErrorMessage = function(text){
+   myApp.alert(text,"Error");
+} </code></pre>
+<p>To attach the error handler to the Component or the Container, add the <code>errbackHandler</code> function to the instance of the Component:</p>
+<pre><code>errbackHandler(command, error)</code></pre>
+<p>The type of the command is designated by the <code>command</code>, and it is useful if you need to distinguish the error messages based on the command that was sent. The actual error is sent within the <code>error</code> argument. Note that the error is the javascript array, the second item in array is the browser error code, and the third one is the HTTP error code. The fist item is the one that you will probably use, and itis again the array: first item in the array is the type of the error - <code>mx</code> for the Maximo error, and <code>general</code> for the other type of errors. The second item is the full text of the error message, and that is the one you will probably use. The third and the fourth item in the array are the message group and the message key as defined in Maximo in case of the <code>mx</code> exception. Most of the time, you want just the <code>error[0][1]</code>, to display the error message.</p>
+<p>Why would you want to have the errbackHandler for the component, since we already have the global error handler? Sometimes you want to display the error message locally inside the Fields, or change the way error handling is done. Check the Polymer TextField in template for example:</p>
+<pre><code> PolymerTextField.prototype.errbackHandler = function (command, error){
+  this.replaceFromLocal();
+  this.setFocus();
+  var el=this.retEl.$.paperdec;
+  el.isInvalid=true;
+  el.setAttribute("error",error[0][1]);
+  } </code></pre>
+<p>This was already discussed in the Field section of the Concepts; in the Field error handler we may want to replace the incorrect value that the user has entered with the value from the cache. The implementation above displays the error message locally to the field.</p>
+<p>When the call to the server is initiated, we need to nofity the user that the execution is taking place, and that is done by displaying the Spinner, Wait Cursor or something similar in virtually all the Mobile and Web applications. In MaximoPlus you need to customize the behavior by overriding the following global functions:</p>
+<pre><code>maximoplus.core.globalFunctions.globalDisplayWaitCursor()</code></pre>
+<p>and</p>
+<pre><code>maximoplus.core.globalFunctions.globalRemoveWaitCursor()</code></pre>
+<p>Sometimes, you may want to display the wait Spinner locally to the Component. If the server action can take long time and you can allow the user to continue their work on the other parts of the UI, you want to add the following functions to the Component:</p>
+<pre><code>prepareCall(command)</code></pre>
+<p>and</p>
+<pre><code>finishCall(command)</code></pre>
+<p>In the Framework7 template we are using this to override the default behavior when fetching the data for the infinite list, and to display the spinner at the end of the list, as it is usual for the infinite scroll lists in mobile apps. Check the mpf7.js for the implementation.</p>
+<h3 id="metadataconcepts">Metadata</h3>
+<p>So far we have mentioned this concept many times, here we will just briefly formalize what we already learned. Whenever the Field is registered on the server as a part of the visual component, its metadata is stored on the Component itself. When the Field control is created, this metadata is passed in the constructor. Metadata sent from the server is the same set of Field attributes that you have in Maximo Database Configuration. Here is the complete list of these:
+</p>
+
+<pre>
+attributeName - the name of the attribute in uppercase
+defautlValue - the default value of the field. You don't need to know this, Maximo will set that value for you
+domainId - the ID of the domain attached to the field
+hasLD - does the attribute has long description
+isALNDomain - has the field ALN Domain attached to it
+length - the field length
+maxType - the Maximo type of the field
+numeric - is the field type numeric
+objectName - the name of the Maximo object to which the field belongs
+persistent - true if the field is persistent, otherwise virtual
+remarks - The remarks about the field
+required - Is the field mark as required in the DB config.
+title - The field title
+</pre>
+
+<p>The most commonly used out of this metadata attributes is the title, that gives you the label of the field.  The metadata that comes from the server is shared among the controls that bound to the same Container. It is possible to add or override the existing metadata on the level of the Component itself with the <code>addMeta</code> function:</p>
+<pre><code>addMeta(fieldName,metadataName,metadataValue)</code></pre>
+<p>You can add arbitrary metadata, or change the existing metadata on the level of the Component with this one. To change the label, you should call for example:<code>mySection,addMeta("ponum","title","PO#")</code>. It is often useful to add the metadata attribute as a mean to control the behavior of the field. This is the example from the Framework7: </p>
+<pre><code>F7ListDialog = function(container, listContainer, field, dialogcols){
+  maximoplus.controls.AbstractListDialog.call(this, container, listContainer, field, dialogcols);
+  
+  this.dialogTemplate=$$("#"+field.metadata.dialogTemplate).html();
+  this.lineTemplate=field.metadata.lineTemplate;//already template parsing is done for the line
+}</code></pre>
+<p>At the time of creating the instance of the dialog, the templates for the dialog and the line of the dialog are read from the metadata. All you have to do is to add this metadata in the main part of the program before rendering the section, here is the example:</p>
+<pre><code>  poSection.addMeta("shipvia","hasLookup",true);
+  poSection.addMeta("shipvia","dialogTemplate","dialogTemplate");
+  poSection.addMeta("shipvia","lineTemplate","valueListTemplate");</code></pre>
+<p>The above snippet will add the metadata that say that field has a lookup, and defines the templates for the dialog and the lines. As already mentioned there are two special metadata attributes reserved for MaximoPlus: <code>hasLookup</code> means that field has lookup, and <code>listColumns</code> gives the array with these columns. </p>
+<h3 id="secconcepts">Security</h3>
+<p>MaximoPlus shares the same security with Maximo. All the security options are defined in the Signature Security Maximo application, and these permissions are given to Maximo Groups. The important difference to understand is that for MaximoPlus every call to the server will go through the signature security options. As you already know, in Maximo the Signature Security options are either Mbo/MboSet method names, dialog names or the DataBean method names. In MaximoPlus we have just the first option - there are no server side dialogs, and no data beans, all your server actions will be in Mbo and MboSets, and all should be controlled by Signature Security.. What does it mean in practice? For the main Application Container and its underlying MboSet there will be no difference, as usually all the  actions that you may call are already under the  Signature security. The major diferrence is that there is no Signature security for the child MboSets. </p>
+<p>The problem how to store the Signature Security options in MaximoPlus is solved by the simple convention: the Description field will hold the name of the relationship for which the signature security is defined, if it starts with the hash key (#) symbol. We can have many levels of the related MboSet if we need, every relationship name should have the hash key in front, we just append it to the previous level relationship. It is almost always one level depth though that we need. For example, lets say you created the  Section to transfer the Item in Inventory application. The Container for this Section will be RelContainer with the <code>TRANSFERCURITEM</code> relationship defined in the Maximo Database Configuration. Once you want to do the actual transfer, you need to call the <code>execute</code> method on that virtual MboSet. In order to do that you need to have the <code>#TRANSFERCURITEM</code> in the description field of Signature Opiton for the Inventory application and <code>EXECUTE</code> option (all the signature option names are in uppercase).  It will frequently happen that there are many options with the same name for the application, mostly because the execute method is what you need to call on your NonPersistentMboSets. If this is the case, name your options as <code>EXECUTE</code>,<code>EXECUTE_1</code>,<code>EXECUTE_2</code>... , underscore and after are ignored bu MaximoPlus.</p>
+<h3 id="serverside">Server Side</h3>
+<p>One of the major benefits of MaximoPlus is that the server side programming is not required to build the application. There are couple of things that can be controlled just on the server side though: authentication, binary upload and binary download and CORS control.</p>
+<h4 id="cors">CORS</h4>
+<p>The last one is very rarely used in production, but is needed to be controlled for the development purposes. For more information about CORS, you can check the following article: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS</a>. Basically, in the web application you can't make an AJAX call to the different domain, and that include even the different port numbers. This restriction doesn't apply to native and hybrid applications, but during the testing you will use <code>cordova run browser</code> a lot, that will run your mobile application in Chrome. Internally this starts the web server on port 8000 and 8001, and your static pages are served from there. The address of the server to which Ajax calls are made is defined on the client by overriding the following function:</p>
+<pre><code>maximoplus.net.gloabalFunctions.serverRoot</code></pre>
+<p>localhost on 8000 and the serevrRoot from above will alway be on the different domain, and the browser will return the failure. In order to fix that, you need to put the following line in the maximo.properties file, before starting the server: </p>
+<pre><code>corsAllowed=http://localhost:8000,http://localhost:8001</code></pre>
+<p>The value for above is the coma separated list of all the domains that are acceptable, in this case this is the address of the cordova browser run page. You may use the CORS in proudction if you serve the static pages on the different server than MaximoPlus server (recommended), but don't want to configure the proxy.</p>
+<h4 id="mpstartup">MaximoPlus start parameters</h4>
+<p>Above we mentioned that to put the CORS parameter in the property file you should add the maximo.property file. When the MaximoPlus server is prepared, it exctracts properties.jar from the maximo.ear file, and when it is started reads the maximo.properties from there. It may be tedious to edit the maximo.properties and repackage the file every time, so you can use the standalone maximo.proerties. For that you have to assign the maximo.properties startup parameter, like:</p>
+<pre><code>-Dmaximo.properties=maximo.properties</code></pre>
+<p>The default session timeout time is 30 minutes, to change it, use the following parameter (in seconds):</p>
+<pre><code>-Dsession.expire</code></pre>
+<p>The default port is 8080, to change the port, specify:</p>
+<pre><code>-Dminimo.port</code></pre>
+<h4 id="authentication">Authentication</h4>
+<p>All the authorization in Maximo is done in the Signature Security itself, so our MaximoPlus has just to define the login method. By default, for developement purposes. MaximoPlus server is not checking the password, username is enough to login the user. For the production system you have to define the following property in maximo.properties:</p>
+<pre><code>minimo.loginMethod</code></pre>
+<p>If you set <code>minimo.loginMethod=maximo</code> it will use the maximo username/password authentication, same like for the default Maximo authentication. If you want to use the customized login, you should place your login class name instead of maximo.</p>
+<p>The login class should implement maximoplus.Login interface, which has only one method defined:</p>
+<pre><code>maximoplus.LoginResponse login(Map requestHTTPHeaders, Map credentials);</code></pre>
+<p><code>credentials</code> is the java Map of parameter passed by the client. In the case of the username and password authentication, the parameter names are always <code>username</code> and <code>password</code>. The username and password are not the only means of authentication though, so credentials can be any map of parameters sent from the client (Mobile device, web page or any other type of client). The <code>requestHTTPHeaders</code> parameters are all the HTTP headers sent from the client. We need this becuause virtually all the Single Sign On implementations rely on the standard HTTP headers sent by the browser or the device. The class should return the instance of the maximoplus.LoginResponse class. For the most cases it is enough just to set the username with the <code>setUserName</code> call on the instance like in the following dummy example:</p>
+<pre><code>
+public LoginResponse login(Map requestHTTPHeaders, Map credentials) {
+	System.out.println("Calling the generalized login for username " + credentials.get("username"));
+	LoginResponse ret = new LoginResponse();
+	ret.setUserName((String) credentials.get("username"));
+	return ret;
+	}
+</code></pre>
+<p>The LoginResponse class has also two additional methods:</p>
+<pre><code>setHTTPHeaders(Map httpHeaders)</code></pre>
+<p>and</p>
+<pre><code>setStatus(int status)</code></pre>
+<p>These methods are used when the login methods require the information from HTTP headers and multiple calls from the server to be made. If you don't set the username in the <code>login</code>, additional call to the server can be made. This is required by the Kerberos SSO. Details of the implementation are in the <code>serverExamples/examples/SpnegoLogin</code> examples class. The explanation of how this class works is outside the scope of this document. Since it is a fully featured SSO implementation you can use it in production.</p>
+<p>Once we defined and implemented the server side Login code, how we invoke it from the client? When the server returns the 401 HTTP response code(not authorized), MaximoPlus automatically calss the global function defined in :</p>
+<pre><code>maximoplus.core.globalFunctions.global_login_function(err)</pre></code>
+<p>When overriding this function you have two options: 1. create the separate login html page or 2. do the login from inside the page you were already on. Since MaximoPlus is used to create Single Page Mobile Apps, using the second option is more natural, but it is completely up to you. </p>
+<p>Let's start with the first example, the login page. In the main page we define:
+</p>
+<pre><code>maximoplus.core.globalFunctions.global_login_function = function(err){
+    window.location="login-general.html";
+}</code></pre>
+<p><code>login-gereral.html</code> points to the HTML page with the login action. Inside the page you need to call the MaximoPlus login functions:</code></p>
+<pre><code>maximoplus.core.max_login_with_redirect(username,password)</code></pre>
+<p>or</p>
+<pre><code>maximoplus.core.general_max_login_with_redirect(credentialsMap);</code></pre>
+<p>Both the functions will send the map of credentials to the server. The first one will send the username and pasword, and the second one the credentials that your server login method requires. Both of the functions have the <code>_with_redirect</code> suffix, and both will redirect the user to the original page after successful login.</p>
+<p>For the "inline" login, you first need to display the UI login component in the the maximoplus.core.global_login_function, for example for the Framework7 template:</p>
+<pre><code>maximoplus.core.globalFunctions.global_login_function = function(){
+  myApp.loginScreen();
+}</code></pre>
+<p>From this login UI part of the application, you need to call :</p>
+<pre><code>maximoplus.core.max_login(username,password,callback,errback)</pre></code>
+<p>or</p>
+<pre><code>maximoplus.core.general_max_login(username,password,callback,errback)</pre></code>
+<p>Unlike its "redirect" counterparts, these functions have the success and the error callback. In case of the error, you should notify the user that the credentials are invalid. In case of success, you should clean the existing state, and start the app page from scratch. The easiest way to do that is to just call <code>document.locaiton.reload()</code> to reload the app page.Example:</p>
+<pre><code>$$("#login_button").on("click", function(e){
+  maximoplus.core.max_login(document.getElementById("login_username").value,
+			    document.getElementById("login_password").value
+			   ,function(ok){
+		              myApp.closeModal();
+                              document.location.reload();
+			    },
+			    function(err){
+			      myApp.alert("Invalid Username or Password", "Error");
+			    }
+			   )
+});</code></pre>
+<h4 id="uploaddownload">Upload and Download</h4>
+<p>Sometimes we need to upload and download unstructed data to/from the server. The obvious reason is to read the documents from Maximo DOCLINKS, or to upload the document, or the photo taken by the mobile. It doesn't have always to be the binary data though. You can use this functionallity to download JSON for example if you need to. Here is the real case scenario. Inventory application has the Item Master with more than 100000 items defined. The end user requires to have the value list with all the items and the feature to pick them from the list or with the barcode scanning while offline. If we need to transfer all the items to offline in the usual automatic way we already discussed, it could take ages to download the entire list. Solution is to define the download function that will return the prepared JSON based on the timestamp of the last fetch date from the client and return the JSON by directly calling the database to form it or even loading the prepared file. Once we get the JSON, we manually insert into the offline data, and have our big list prepared in fraction of time compared to the original method.</p>
+<h5>Configuring MaximoPlus to use the upload and download</h5>
+<p>You just need to put an arbitrary name in Maximo properties pointing to the class, for example:</p>
+<pre><code>mobilePhotoUpload=com.mycompany.PhotoUpload</code></pre>
+<h5>Calling upload and download from the client</h5>
+<p>Uploading the data to the server is just sending the POST request with the binary to the server upload URL. There is the helper function to get the upload URL:</p>
+<pre><code>maximoplus.net.getUploadURL(container,method,mapOfParams)</code></pre>
+<p>Usually, you want to save the data relative to some MboSet(most probably DOCLINKS related to that MboSet), that is why the <code>container</code> is mandatory. <code>method</code> is the entry in the Maximo properties pointing to specific upload class (see <code>mobilePhotoUpload</code> example from above). If your upload class requires more specific parameters (for example which upload folder should it be for documents), you need to pass the <code>mapOfParams</code> javascript object, with keys that will have the same names as your required parameters. For example:<code>{folder:"Drawings", name:"photo-upload-Dec 2017"}</code>. Full example:</p>
+<pre><code> navigator.camera.getPicture(
+   function(imageData){
+    var oXHR = new XMLHttpRequest();
+    oXHR.open('POST',maximoplus.net.getUploadURL(appContainer,"mobilePhotoUpload"),true);
+    oXHR.send(imageData);
+}, 
+   function(error){
+    alert("photo can't be taken, device error");
+   },
+   {quality: 50,
+    destinationType: destinationType.DATA_URL }) </code></pre>
+<p>The code from above takes a Picture from the mobile, and then upload it to MaximoPlus server. </p>
+<p>There is the similar utility class to get the download URL:</p>
+<pre><code>maximoplus.net.getDownloadURL(container,method,mapOfParams)</code></pre>
+<p>Once you get the download URL, you can just append it as link in your DOM, or use the javascript File object to read it first in the app and then manipulate. </p>
+<h5>Upload class</h5>
+<p>For the upload, you have to implement the maximoplus.Upload interface in your class. If you are just looking to upload the Documents or Mobile photos to DOCLINKS, you can skip the implentation details, you just need to configure it Maximo properties and include the class from examples examples.DoclinksUpload in your server distribution.</p>
+
+	</div>
+      </div>
+    </div>
+    
+    <!-- Content End -->
+    
+    
+    <!-- Footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12">
+            
+            <!-- ScrollToTop -->         
+            <a class="scrollup" href="#" title=""><i class="fa fa-angle-up"></i></a>         
+            <!-- ScrollToTop End -->
+            
+            <p>All Rights Reserved - Copyright &copy; 2016</p>
+            
+          </div>
+          
+        </div><!-- .row End -->
+      </div><!-- .container End -->
+      
+    </footer>
+    <!-- Footer -->
+
+    
+    <!-- Javascript Files -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> 		
+    <script type="text/javascript" src="bootstrap3.3.7/js/bootstrap.js"></script>	
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#stacked-menu").on('affixed.bs.affix', function(){
+          $('.affix').css('width', 220);
+      
+         });
+      });
+
+    </script>
+  </body>
+</html>

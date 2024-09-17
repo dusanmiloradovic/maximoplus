@@ -1,0 +1,131 @@
+.slide{
+    width:100%;
+    height:100%;
+    padding-top:75px;
+    text-align:center;
+    display:none;
+}
+
+/*
+ * This file is NOT needed in order to use skrollr.
+ * The demo uses it and it may help you as well.
+ */
+
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+
+}
+
+h1{
+    font-size:40px;
+    font-weight:300;
+}
+
+h2{
+    font-size:30px;
+    font-weight:300;
+}
+
+.skrollable {
+	/*
+	 * First-level skrollables are positioned relative to window
+	 */
+	position:fixed;
+
+	/*
+	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+	 */
+	z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+	/*
+		May cause issues on Android default browser (see #331 on GitHub).
+	*/
+	position:absolute;
+}
+
+.skrollable .skrollable {
+	/*
+	 * Second-level skrollables are positioned relative their parent skrollable
+	 */
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	/*
+	 * Third-level (and below) skrollables are positioned static
+	 */
+	position:static;
+}
+
+.mobile-firstSlide{
+    float: left;
+    max-height: 400px;
+    padding-left: 50px;
+}
+
+.web-firstSlide{
+    right: 40px;
+    max-width: 700px;
+    width:600px;
+    padding-right: 50px;
+}
+
+.logo{
+    max-height:50px;
+}
+
+.sitemenu{
+    position:fixed;
+    height:80px;
+    top:0px;
+    /**background-color:#3f51b5;*/
+    background-color:#673ab7;
+    font-size:30px;
+    color:white;
+    width:100%;
+    line-height:100%;
+}
+
+.menuitem{
+    margin-right:40px;
+    vertical-align:middle;
+    line-height:80px;
+    height:80px;
+    font-size:24px;
+}
+
+.menulogo{
+    margin-left:30px;
+    vertical-align:middle;
+    line-height:80px;
+    height:80px;
+    font-size:32px;
+    float:left;
+    }
+
+.fes{
+    position:relative;
+    top:65%;
+    margin-right:100px;
+    font-size:50px;
+}
+
+.sitemenu a{
+    color:white;
+    text-decoration:none;
+}
+
+.sitemenu a:hover{
+    color:yellow;
+}

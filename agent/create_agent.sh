@@ -1,0 +1,1 @@
+jar cmf manifest.txt agent.jar -C ../target/classes maximoplus/MaximoHookAgent.class

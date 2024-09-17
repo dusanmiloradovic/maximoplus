@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500|Pacifico);
+
+.caret-container {
+  float: right;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 36px;
+    color: #303030;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+ul.nav-stacked ul.nav-stacked > li > a {
+  padding-left: 30px;
+}
+
+.nav-container {
+  background-color: #f5f5f5;
+   font-weight: bold;
+}
+  
+.nav-sub-container {
+  background-color: #f8f8f8;  
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-collapse { padding-top: 1em; }
+
+a.logo {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-left:5px;
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-top:-16px;
+    margin-right:4px;
+    width:250px;
+}
+
+.dev-navbar a,
+.dev-navbar a:hover{
+    background-color:#193441 !important;
+    color: #fff !important;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+    background-color:#193441;
+    font-size:18px;
+}
+
+.navbar-default.dev-navbar{
+   background-color:#193441;
+   border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+.navbar-collapse.dev-navbar{
+    border-color:#193441;
+}
+
+.dev-navbar .navbar-toggle,
+.dev-navbar .navbar-toggle:focus,
+.dev-navbar .navbar-toggle:hover{
+  background-color:#193441;
+  border-color:#fff;
+}
+
+.dev-navbar.navbar-default .navbar-toggle .icon-bar{
+    background-color:#fff;
+}
+
+.dev-navbar.navbar-default .navbar-collapse {
+    border-color: #193441;
+}
+
+#stacked-menu a{
+    color:#193441;
+}
+
+@media (max-width: 992px) {
+   .affix {
+        position: static;
+   }
+   .logo img{
+       width:200px;
+   }
+}

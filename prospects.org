@@ -1,0 +1,154 @@
+* Prospects
+** Hong Kong
+*** Lexco Group
+kazu da su glavni implementatori Maksima u Nohg kongu, medjutim imaju jako mali broj zaposlenih
+Klijent im je izmedju ostalog Diznilend u HK
+- [ ] Jason Pun jason.pun@lexcogroup :: mobilni developer
+- [ ] Kim Liu kimlin@lexcogroup:: glavni mobilni developer (stavili su ga na sajt)
+** Canada
+** US
+** Australia
+*** ISW [[https://isw.net.au] ISW]]
+    deluju mi dosta kompatibilno sa maximoplus. 
+    Kazu da su glavni IBM system integratori u Australiji/NZ
+    Isto kazu da prodaju svoj softver, i promovisu cloud i IOT
+- [ ] Jared Roberts jroberts@isw.net.au 
+- [ ] Nick Platts nplatts@isw.net.au
+- [ ] Tim Royle troyle@isw.net.au
+- [ ] Andrew Reynolds areynolds@isw.net.au
+- [ ] Graeme Reardon greardon@isw.net.au
+- [ ] Craig Kokay ckokay@isw.net.au
+** UK
+*** Macs UK
+Imaju kancelarije sirom Evrope, ali im je sediste u Londonu,
+ deluju kao klasicna konsultantska kuca
+- [ ] Justin Kilpatrick j-kilpatrick@macs.eu :: Technical Solution Architect at MACS EU [[https://www.linkedin.com/in/justinkilpatrick/]]
+- [ ] Dominique Potter dominique.potter@macs.eu :: Professional Services Lead [[https://www.linkedin.com/in/dompotter/]]
+- [ ]  Ravneet (Bhachu) Kalsi ravneet.kalsi@macs.eu :: Maximo consultant nema mnogo vajde, poslacu mejl za svaki slucaj
+- [ ] Edward Gledhill edward.gledhill@macs.eu :: Management consultant, dosta iskusan radio jos u MRO, radi od 1982, od 1999 u MRO: [[https://www.linkedin.com/in/edward-gledhill-1938b91/]]
+- [ ] Dave Thomas dave.thomas@macs.eu :: Maximo Solution Architect mislim da je vise orijentisan na biznis stranu [[https://www.linkedin.com/in/dave-thomas-a4953a2/]]
+- [ ] Richard Long richard.long@macs.eu :: Maximo Solution Architect, malo vise tehnicki orijentisan, ali ne mnogo [[https://www.linkedin.com/in/richard-long-73a10b21/]]
+- [ ] Jeff Barnes jeff.barnes@macs.eu :: Maximo Functional Consultant, radio je kao tehnicki do 2018 [[https://www.linkedin.com/in/jeff-barnes-bab64523/]] Razvija SAAS resenje sa OSCL integracijom??
+- [ ] Pete McCartney pete.mccartney@macs.eu  :: Maximo functional consultant (nije ostavio nista na linkedinu od detalja) [[https://www.linkedin.com/in/pete-mccartney-44701914b/]]
+*** Arcadus Gen
+- [ ] Edgar Mengelberg :: Solution Architect
+** Holandija
+*** Gemba
+
+Rade i sa Anywhere i sa EZMaxMobile, mislim da sam ih zvao i da nisu odgovorili
+
+- [ ] Jack Lok j.lok@gemba.nl :: Founder [[https://www.linkedin.com/in/gembajack/]]
+- [ ] Michiel de Groot m.groot@gemba.nl:: Senior Technical Architect (nista na linkedinu, sem da je radio na maksimu)
+- [ ] Gertjan Zomerdijk g.zomerdijk@gemba.nl:: Consultant (ne pominje nigde mobilno iskustvo) [[https://www.linkedin.com/in/gertjan-zomerdijk-828598a/]]
+- [ ] Marten Bosma m.bosma@gemba.nl:: Senior Maximo Implementation Consultant [[https://www.linkedin.com/in/bosmamarten/]]
+- [ ] Rigie Bodeutsch r.bodeutsch@gemba.nl:: Technical Consultant IBM Software, nista posebno, izgleda vise kao tehnicar [[https://www.linkedin.com/in/rigie-bodeutsch/]]
+- [ ] Guido Meijer g.meijer@gemba.nl:: Maximo Consultant, dosta iskustva ne pominje mobilni [[https://www.linkedin.com/in/guido-meijer-8830b37/]]
+- [ ] Herman van Veen :: Consultant, nikakvi detalji, sem da je sertifikovan za Maksimo
+- [ ] Guido Lens g.lens@gemba.nl : Mobile Software Engieneer, ne znam da li je radio u Maksimu, junior
+- [ ] Olton Clijdesdale o.clijdesdale@gemba.nl:: Java developer/Maximo technical consultant [[https://www.linkedin.com/in/oltonclijdesdale/]]
+- [ ] Larry Van Elewoud e_larry@gemba.nl:: Maximo consultant (4 godine iskustva), funkcionalni [[https://www.linkedin.com/in/7424973/]]
+- [ ] Sjoerd Montulet s.montulet@gemba.nl : Maximo consultant (tehnicki, 19 godina iskustva u maxksimu) https://www.linkedin.com/in/sjoerdmontulet/
+- [ ] Berry Kleuver b.kleuver@gemba.nl:: Maximo functional konsultant (mala sansa da je zainteresovan, 3 godine iskustva) [[https://www.linkedin.com/in/berrykleuver/]]
+- [ ] Alexander van Zoelen a.vanzoelen@gemba.nl:: General manager(12 godinba u gembi, service delivery i itil ga zanima)  [[https://www.linkedin.com/in/agmvz/]]
+- [ ] Gerben Ter hosrt :: Operations manager (16 godina u gembi), imao je nekog konkretnog iskustva sa maksimom [[https://www.linkedin.com/in/gterhorst/]]
+- [ ] Stefan Hoffmanns s.hoffmanns@gemba.nl : Business development manager, bivsi konsultant (18 godina u gembi)
+- [ ] Menno Gouma m.gouma@gemba.nl:: Senior technical consultant, mislim da sam ga vec kontaktirao [[https://www.linkedin.com/in/mennogouma/]]
+- [ ] Wouter Schouten w.schouten@gemba.nl:: Operations manager (13 godina bio biznis konsultant) [[https://www.linkedin.com/in/wouter-schouten-7933243/]]
+- [ ] Bart Schouten b.schouten@gemba.nl:: Functional Consultant (4 godine)
+*** OXPlus
+Nigde ne mise eksplicitno da rade mobilne aplikacije. Fokusirani su na Transport resenja
+
+- [ ]  Henri Snijders :: CEO [[https://www.linkedin.com/in/henri-snijders-897a056/]]
+- [ ] Richard van Dongen richard.van.dongen@oxplus.com :: Chief Commercial Officer [[https://www.linkedin.com/in/richard-van-dongen-84b7a3/]]
+- [ ] Rogier de Kwaasteniet :: Global Business Development Manager [[https://www.linkedin.com/in/rogierdk/]]
+- [ ] Richard Noppert richard.noppert@oxplus.com :: Product Manager [[https://www.linkedin.com/in/richardnoppert/]]
+- [ ] Fernando Alfaro fernando.alfaro@oxplus.com :: Maximo Consultant (20 godina iskustva, mada vise iznis orijetntisan) [[https://www.linkedin.com/in/fernando-alfaro-9870498/]]
+- [ ] Marc Lieverst marc.lieverst@oxplus.com :: Managing Consultant (biznis konsultant iskustvo) [[https://www.linkedin.com/in/marc-lieverst-7a12b89/]]
+- [ ] Rudy Seebus rudy.seebus@oxplus.com :: business consultant [[https://www.linkedin.com/in/rudy-seebus-062b329/]]
+- [ ] Paulo Rodrigues paulo.rodrigues@oxplus.com :: Maximo technical consultant [[https://www.linkedin.com/in/biscas/]]
+- [ ] Moises Xavier moises.xavier@oxplus.com :: Maximo technical consultant [[https://www.linkedin.com/in/moisesgxavier/]]
+*** Amosa Group
+Ovo je vrlo mala firma ima samo 4 zaposlena na Linkedinu. Verovatno spaja klijente sa 
+drugim firmama
+- [ ] Louis Stoop louis.stoop@amosa-group.com :: CTO prakticno jedina tehnicka osoba u firmi
+*** Znaps
+Imaju filijalu u Rumuniji, deluju dosta tehnicki orijentisani
+- [ ] Danny Bols danny_bols@znapz.com :: CEO i programer, deluje dobra kobminacija [[https://www.linkedin.com/in/dannybols/]]
+- [ ] Jan-Willem Steur jan-willem_steur@znapz.com :: Chief Knowledge Officer, iskusan je kao biznis konsultant [[https://www.linkedin.com/in/janwillemsteur/]]
+- [ ] Marcel Piket marcel_piket@znapz.com:: Senior Technical Consultant, radi samo Maximo [[https://www.linkedin.com/in/marcelpiket/]]
+- [ ] Patrick van de Sande :: Sr. Consultant (nema detalja) [[https://www.linkedin.com/in/patrickvdsande/]]
+- [ ] Marcel van der Heide :: Sr. Technical Consultant [[https://www.linkedin.com/in/marcel-van-der-heide-9309593/]]
+- [ ] Jonathan Spanenburg jonathan_spanenburg@znapz.com :: Sr. business consultant [[https://www.linkedin.com/in/jspanenburg/]]
+- [ ] Raf Van Camp :: Senior Maximo consultant, tehnicki konsultant [[https://www.linkedin.com/in/rafvancamp/]]
+- [ ] Ivan Lagunov ivan_lagunov@znapz.com :: Technical Lead, Software Architect, na papiru dosta jak.Radi isto tako u Rusiji na drugim projektima [[https://www.linkedin.com/in/lagivan/]]
+- [ ] Andrew Jeffrey andrew_jeffrey@znapz.com :: Maximo SME, radio 10 godina u MROu [[https://www.linkedin.com/in/andrewajeffery/]]
+** Finska
+** Italija
+*** Templest Solutions
+Dosta velika firma, izgleda je jedan deo koji je radio Maximo kupljen, I njihov partner me je nasao na linkedinu
+- [ ] Diego Visentin dvisentin@tempestive.com :: partner https://www.linkedin.com/in/diego-visentin-3377b23/
+- [ ] Roberto Vivian rvivian@tempestive.com :: IBM Maximo expert at Tempestive https://www.linkedin.com/in/roberto-vivian-2189a56/
+*** MaxiPoint Oy
+RapidView resenje
+** Nemacka
+*** Axino Solutions GmbH
+Mala firma, pominju IBM mobilne aplikacije kao jednu od klucnih stvari, vrlo mali broj tehnickih lica, verovatno autsorsuju
+- [ ] Otmar Seifert otmar.seifert@axino-group.com :: Key account manager https://www.linkedin.com/in/otmar-seifert-bb60036/ 
+- [ ] Manuel Bedorf manuel.bedorf@axino-group.com :: Head of Professional Services EAM/Mobile https://www.linkedin.com/in/manuel-bedorf-6668a256/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAvguy4B0dSZXGvhKd0f29-92c8GkYnc5PU
+- [ ] Matthias Rath matthias.rath@axino-group.com :: Doktor nauka, veoma tehnicko lice https://www.linkedin.com/in/matthias-rath-47622a3/
+- [ ] Hendrik Rollinger hendrik.rollinger@axino-group.com :: Head of sales/business development https://www.linkedin.com/in/hroellinger/
+- [ ] Ralf Beyer ralf.beyer@axino-group.com :: Managing director https://www.linkedin.com/in/ralf-beyer-993a3b2/
+- [ ] Oliver Klenker oliver.klenker@axino-group.com :: Head of Professional services https://www.linkedin.com/in/oliver-klenker-aa432880/
+- [ ] John Huntjens john.huntjens@axino-group.com :: Business development manager/Senior consultant https://www.linkedin.com/in/john-huntjens-b9986411/
+- [ ] Domenico Carapezza domenico.carapezza@axino-group.com :: Key account manager https://www.linkedin.com/in/domenico-carapezza-b163856/
+*** SVA
+Dosta velika firma, sa jedno 10 zaposlenih koji rade u Maksimu, kao da su kupljeni
+- [ ] Marco W. Steinborn marco.steinborn@sva.de Head of business line ESM:: https://www.linkedin.com/in/steinborn/
+- [ ] Andreas Brieke andreas.brieke@sva.de :: Technical leader EAM https://www.linkedin.com/in/andreas-brieke-266b483/
+- [ ] Sezer Akyol sezer.akyol@sva.de :: EAM SME https://www.linkedin.com/in/sezerakyol/
+- [ ] Matthias Stroske matthias.stroske@sva.de :: Senior IT Architect for Asset Management https://www.linkedin.com/in/matthiasstroske/
+- [ ] Hagen Neulen hagen.neulen@sva.de :: System Architect Asset Management Solutions https://www.linkedin.com/in/hneulen2020/
+- [ ] Jens Kuhnhenn jens.kuhnhenn@sva.de :: IT Service Management Consultant https://www.linkedin.com/in/jens-kuhnhenn-0231833/
+- [ ] Kai Scheniders kai.schneiders@sva.de :: Account Manager https://www.linkedin.com/in/kaischneiders/
+- [ ] Tilo Kaercher tilo.kaercher@sva.de :: Solution specialist (sales) https://www.linkedin.com/in/tilo-kaercher-5a3774/
+- [ ] Hamza Nadi hamza.nadi@sva.de :: Head of Solution Sales https://www.linkedin.com/in/hamza-nadi-316a9914/ 
+- [ ] Christoph Zurek christoph.zurek@sva.de :: Head of competence center https://www.linkedin.com/in/czurek/
+*** Rodias GbmH
+- [ ] Thomas Ostertag tostertag@rodias.de :: Lead Business Development https://www.linkedin.com/in/thomas-ostertag-b6189988/
+- [ ] Renata Nowicka rnowicka@rodias.de :: Solution expert https://www.linkedin.com/in/renata-nowicka-pyda-4576a12/
+- [ ] Domingo Nunez dnunez@rodias.de :: EAM solution expert https://www.linkedin.com/in/dnunezm/
+- [ ] Ivan Sugja isugja@rodias.de :: Technology consultatn https://www.linkedin.com/in/ivan-sugja-5a667b108/
+- [ ]  Christian Hannen channen@rodias.de:: Senior consultant https://www.linkedin.com/in/christian-hannen-32884930/
+- [ ] Jens Abel jabel@rodias.de :: Senior Consultant Maximo https://www.linkedin.com/in/jens-abel-241b1766/
+- [ ] Peter Stängle :: Product manager https://www.linkedin.com/in/peter-st%C3%A4ngle-11a055208/
+- [ ] Sören Steinmetz  ssteinmetz@rodias.de:: Project leader/tech consultnat https://www.linkedin.com/in/s%C3%B6ren-steinmetz-bb6b261bb/
+- [ ] Andreas Hertenstein ahertenstein@rodias.de :: Head of Maintenance, Service & Support https://www.linkedin.com/in/andreas-hertenstein-b9b807206/
+- [ ] Siegfried Huber shuber@rodias.de :: Software engineer https://www.linkedin.com/in/siegfried-huber-809478206/
+- [ ] Diego Rouge diego.rouge@rodias.de :: Senior EAM consultant https://www.linkedin.com/in/diegorouge/
+- [ ]  Jan-Hendrik Kuessner jan-hendrik.kuessner@rodias.de ::  Project leader tech consultant https://www.linkedin.com/in/jan-hendrik-kuessner-b188891a2/
+- [ ] André Panné apanne@rodias.de :: CEO https://www.linkedin.com/in/andrepanne/
+- [ ] Pawel Nowicki pnowicki@rodias.de :: Senior developer https://www.linkedin.com/in/pawelnowicki/
+- [ ] Marc Bogenstahl mbogenstahl@rodias.de  :: Head of business solutions https://www.linkedin.com/in/marc-bogenstahl-78950275/
+- [ ] Matthias Korb mkorb@rodias.de :: Solution architect https://www.linkedin.com/in/matthias-korb-53864a137/
+*** Adam Majerczyk (freelance) kontakt.linkedin@3yc.de
+** Austrija
+*** Fiedler IT Services
+1 covek kompanija (Wolfgang Fiedler) www.fiedler-it.at office@fiedler-it.at
+** Svedska
+*** Total Digital
+Mala firma 9 zaposlenih, samo Maximo rade
+- [ ] Magnus Eriksson magnus@totaldigital.se :: Maximo konsultant https://www.linkedin.com/in/magnus-eriksson-557554104/
+- [ ] Niklas Brolin niklas@totaldigital.se :: System developer, dosta je tehnicki https://www.linkedin.com/in/brolin/
+- [ ] Tero Kuusela tero@totaldigital.se :: IT Consultant https://www.linkedin.com/in/tero-kuusela-a7661079/
+- [ ] Per Gumbel per@totaldigital.se :: Senior Consultant https://www.linkedin.com/in/pergumbel/
+- [ ] Jonas Karlsson jonas@totaldigital.se  :: Maximo Consultant https://www.linkedin.com/in/jonas-karlsson-11524487/
+- [ ] Fredrik Säfström fredrik@totaldigital.se :: Maximo Consultant https://www.linkedin.com/in/fredrik-s%C3%A4fstr%C3%B6m-7b8a7b144/
+- [ ] Hakan Redgert hakan@totaldigital.se :: Senior Maximo Consultant https://www.linkedin.com/in/hakan-redgert-09a6b2/
+- [ ] Linus Koszinowski linus@totaldigital.se :: Solution Architect https://www.linkedin.com/in/linuskoszinowski/
+- [ ] Olof Hermansson olof@totaldigital.se :: Consulting Architect https://www.linkedin.com/in/olof-hermansson-5827172/
+* Contacted
+** Templest Solutions Italy
+*** Diego Visentin dvisentin@tempestive.com 26.2.2020
+*** Roberto Vivian rvivian@tempestive.com 26.2.2020
+* Answers
+

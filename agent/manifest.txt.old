@@ -1,0 +1,2 @@
+Premain-Class: maximoplus.MaximoHookAgent
+Boot-Class-Path: ../lib/businessobjects-0.0.1.jar:../lib/j2ee_jar-0.0.1.jar:../lib/log4j_jar-0.0.1.jar:../lib/properties_jar-0.0.1.jar:../lib/resources_jar-0.0.1.jar:../lib/oraclethin_jar-0.0.1.jar

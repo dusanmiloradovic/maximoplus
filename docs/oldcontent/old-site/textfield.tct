@@ -1,0 +1,37 @@
+1. Creating the HTML structure of the field.
+The most common field-level control is the TextField. Like all the other field level controls, it has the concept of renderer, inherited from Google Closure. Renderer is the function that creates the HTML structure of the field. If you are not going to change the structure, you should not override the renderer class.
+To change the default renderer, you should override the prototype function maximoplus.controls.prototype.getRenderer and override the maximoplus.controls.TextFieldRender.prototype.createDom .
+
+Example:
+
+<pre><code>
+
+MyTextField = function (metadata,id){
+  //the constructor class
+  maximoplus.controls.TextField.call(this,metadata,id);
+}
+
+gooog.inherits(MyTextField, maximoplus.controls.TextField);
+
+MyTextField.prototype.getRenderer = function(){
+  return mew MyTextFieldRenderer(this);
+}
+
+MyTextFieldRenderer = function (metadata,id){
+//constructor
+  maximoplus.controls.TextFieldRenderer.call(this,metadta,id);
+}
+
+goog.inherits(MyTextFieldRenderer, maximoplus.controls.TextFieldRenderer);
+
+MyTextFieldRenderer.prototype.createDom = function(control){
+//..function that 
+var dm = document.createElement("div");
+//now insert some custom structure here
+
+return dm;
+}
+
+</code></pre>
+
+

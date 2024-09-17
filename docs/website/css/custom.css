@@ -1,0 +1,135 @@
+.header{
+    position:sticky;
+    top:0px;
+    width:100%;
+    z-index:999;
+    background:white;
+}
+
+.header img{
+    width:200px;
+    padding-top:10px;
+    padding-left:20px;
+}
+
+.leadimg{
+    width:100%;
+    /*    background-image:url('../images/rendered-web3.jpg');*/
+    /* background-image:url('../images/rendered55.jpg'); */
+    background-image:url('../images/newfront.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FAFAFA;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    /**    height:30vh;*/
+    min-height:70vh;
+}
+
+.aboutusimg{
+    width:100%;
+    background-image:url('../images/aboutus22.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height:60vh;
+    min-height:40vh;
+    
+}
+
+.aboutustop{
+    margin-top:10vh;
+}
+
+.buttons-inline{
+    text-align:center;
+}
+
+.buttons-header{
+    margin-top:60%;
+}
+
+.buttons-header a{
+    width:140px;
+}
+
+.endoper{
+    margin-bottom:10vh;
+}
+
+@media(min-width:600px){
+    .leadimg{
+	min-height:40vh;
+    }
+    .headtitle{
+	font-size:3.0rem;
+    }
+
+    .buttons-page{
+	padding-top:0vh;
+    }
+}
+
+
+.leadimg .button-sec{
+    background:white;
+}
+
+.headtitle{
+    text-transform: uppercase;
+    /**    font-size: 4.0rem;*/
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color:white;
+}
+
+.headsubtitle{
+    font-weight:bold;
+    color:white;
+}
+
+
+.imgtitle{
+    position:absolute:
+	top:20%;
+}
+
+.label-row{
+    text-align:center;
+    margin-top:5%;
+    
+}
+
+.buttons-page{
+    text-align:center;
+    /**    margin-bottom:3%;*/
+    position:absolute;
+    bottom:0px;
+    width:100vw;
+}
+
+.container-top{
+    margin-top:5%;
+}
+
+.emphasis{
+    color:#11567F;
+}
+
+.error{
+    color:#cc0000;
+    font-weight:bold;
+}
+
+.noerror{
+    color:#11567F;
+    font-weight:bold;
+}

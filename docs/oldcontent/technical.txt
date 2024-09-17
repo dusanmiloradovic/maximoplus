@@ -1,0 +1,40 @@
+Introduction
+
+MaximoPlus is a platform for building Maximo mobile applications - native hybrid application, mobile web or Progressive Web Application.
+
+MaximoPlus can help you cut the time and cost of development by order of magnitude. You don't need experts to utilize it fully. Even beginner level developers can become fully productive quickly.
+
+The idea behind the platform is simple: you already have the application in Maximo, it should be trivial to tailor it for the mobile. 
+
+MaximoPlus gives you the full Maximo application functionality, and much more with its Components. If you are familiar with the recent JavaScript technologies, you might have used React, Angular, Web Components or some similar technology. We provide the same component-based approach with the set of ready-made Maximo Components. If you are not very familiar with recent Javascript, no worries; as you can see in the manual, it is trivial to use.
+
+The other way to think about the components is to picture them as Maximo Application Designer Components, only much more powerful.
+
+The Power of Components
+
+MaximoPlus based application is always a Single Page Application - the entire application lives on the device; you don't need to deploy anything on the server. It is a common way of writing JavaScript programs, and it gives you distinct deployment advantages over other solutions - you can roll out as many applications you like without making any changes on the server, and without restarting it.
+
+Even more exciting feature of the MaximoPlus Components is that being a simple JavaScript component, they have the full access to all the mobile device features. For example, it is trivial to make your component scan bar code while offline or open Google Maps, or anything you can imagine.
+
+The Components are extendible. We provide two implementations to pick from - one using the Web Components, and another using the React library. The extensibility empowers you to use any of thousands of components and libraries from the Internet in your application (React components for example https://github.com/brillout/awesome-react-components). You can even create your own set of components in some other JavaScript technology if you want.
+
+Templates
+
+Components only are not sufficient to make an application. You need to take care of the navigation, animation, dialogs, scrolling, styling, and other nifty details that make a great app.
+Templates are application skeletons with the specific look and navigation behavior - iOS or Material design, or anything else.
+Once you choose a template, development is done merely by placing the components inside it, see the tutorial for example.
+
+Open
+
+Components and templates are free and open source; the only proprietary part of the client-side application is the core library. You can easily customize, style, adapt or even create your templates, or adapt the existing components. The best way to learn is to read the source code of our examples.
+
+Even More - Our other products 
+
+MaximoPlus Native
+
+MaximoPlus Components are designed to be very fast with the smooth user experience, and that should be sufficient for most of the projects. If you are willing to invest some extra effort to create the full native application, take a look at our MaximoPlus Native - MaximoPlus Components for the React Native.
+
+GraphQL server for Maximo
+
+Do you imagine your Maximo mobile or web application as a part of the bigger picture, as a piece in your Infomation System? GraphQL is the new API standard adopted by enterprises worldwide. GraphQL for Maximo is our solution, and it covers much more functionality than Maximo MIF - all the functionality of MaximoPlus, except for the visual part. You can route the workflow, call the Maximo actions, and expose everything in the standard GraphQL format.
+

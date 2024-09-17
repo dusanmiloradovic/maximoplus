@@ -1,0 +1,15 @@
+MaximoPlus has a simple architecture, as shown in the picture below.
+
+MaximoPlus server runs Maximo core services in the background - full Maximo without the Maximo web layer, MIF, BIRT reports, Cron Tasks and other add-ons. MaximoPlus layer manages the communication between Maximo and the client (mobile device), stores the user data, and manage the sessions.
+
+The heart of every MaximoPlus based app is the MaximoPlus Core JavaScript Library. It handles the creation and lifecycle of the components, error handling, communication with the server, offline processing, inter-component communication and much more. This library is never accessed directly, and most of the time is invisible for the developer.
+
+As we have already demonstrated, we create an app by placing the components in the template. MaximoPlus core library provides just the core component logic, not the ready-made components.  The next layer of an application, component libraries layer, contains an implementation of the components.
+
+MaximoPlus Core library is designed to allow the creation of the components using any JavaScript component library or framework, or even creating the components from scratch. So far, MaximoPlus provide two implementations of Components: one using Web Components and another using React. 
+
+As described in the manual, both implementations look very similar, have the same component names and use the JSX.  Creating a new component library is straightforward.  If there is a need, you can create your own, using Vue for example. All the component and template libraries are open sourced, and you can follow the same patterns to create your own component set.
+
+The Template is the final layer, the one accessed by the developer directly. You can think of it as a skeleton of an application. 
+
+ It consists of the styled components, the navigation system, and a sample app. A programmer creates the app by placing the components inside the template. You can customize the look and feel and behavior of the template easily, or even create the new template.

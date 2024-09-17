@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Download MaximoPlus</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/gh.css">
+
+    <!-- Favicon
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src='https://www.google.com/recaptcha/api.js'></script>    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140085903-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140085903-1');
+    </script>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+      var u="//maximoplus.com/srvuser/";
+    _paq.push(['setTrackerUrl', u+'js/']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+  <body>
+    <nav class="nav-show">
+      <div class="container">
+	<ul>
+	  <li>
+	    <a href="index.html">
+	      <img src="images/color_logo_transparent_background_small.png" />
+	    </a>
+	  </li>
+	  <li>
+	    <a href="#">Products</a>
+	    <ul>
+	      <li><a href="about.html">MaximoPlus</a></li>
+	      <li><a href="graphql.html">GraphQL Server for Maximo</a></li>
+	    </ul>
+	  </li>
+	  <li><a href="contactus.html">Contact Us</a></li>
+	  <li><a href="aboutus.html">About Us</a></li>
+	  <li><a href="blog/">Blog</a></li>
+	  <li class="icon">
+            <a href="javascript:void(0);" onclick="toggleMobileNav();">&#9776;</a>
+          </li>
+	</ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 style="margin-top:20px;">Download MaximoPlus</h1>
+      <p>Thank you for the interest in MaximoPlus. Please fill in the form, and your download of the MaximoPlus server installation will begin shortly. Follow the <a href="manual/html/#/README?id=maximoplus-server">installation instructions</a>, and read our <a href="https://maximoplus.com/blog/getting-started-with-maximoplus/">tutorial</a> to get started.</p>
+      <form id="form">
+	<input type="hidden" name="type" id="type" value="download">
+	<div class="row">
+	  <div class="six columns">
+	    <label for="name">Name*</label>
+	    <input type="text" id="name" name="name" class="u-full-width">
+	  </div>
+	  <div class="six columns">
+	    <label for="company">Company*</label>
+	    <input type="text" id="company" name="company" class="u-full-width">
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="six columns">
+	    <label for="email">Email*</label>
+	    <input id="email" type="email" name="email" class="u-full-width" >
+	  </div>
+	  <div class="six columns">
+	    <label for="position">Position</label>
+	    <input type="text" id="position" name="position" class="u-full-width">
+	  </div>
+	</div>
+	<label for="message">Message</label>
+	<textarea class="u-full-width" id="message" name="message"></textarea>
+	<div class="g-recaptcha" data-sitekey="6Le7oB4TAAAAAG-UKEsfDTvbLgE4cQ_CaLzgX619"></div>
+	<input class="button-primary" type="submit" value="Submit" id="submit">
+	<div id="loading" class="invisible">&#8230;</div>
+	<div id="errorpost"></div>
+      </form>
+    </div>
+    <script src="js/donwload.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

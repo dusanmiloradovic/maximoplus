@@ -1,0 +1,14 @@
+MaximoPlus - build your Maximo mobile apps in hours, not months. Create high-quality apps with minimum cost and effort.
+
+We don't provide the Inventory, Work order or any pre-built mobile solution. You already have the application in Maximo, use MaximoPlus to bring it to the mobile.
+
+MaximoPlus supports all Maximo application features, so you don't have to compromise on your business requirements - route the workflow, change the status, adjust the inventory, create the PO from PR,... all the Maximo actions are supported and controllable through Maximo signature security.
+
+Mobile device features are trivial to access from our platform. Want to scan the item QR code while offline, or use Google Maps application to navigate to your asset location? It is trivial with MaximoPlus, check our demo apps.
+
+Installation and deployment are straightforward, no need for specialized servers or admin applications. Even WebSphere or WebLogic are not needed, MaximoPlus comes with its own server. You just need to refer to your Maximo installation and prepare the deployment in two minutes with our tool.
+
+You can choose your preferred way to distribute the app - native hybrid app, mobile web application or Progressive Web Application, select the strategy best for your needs.
+
+MaximoPlus uses state of the art web technologies. That gives you the option to re-use thousands of free components from the Internet in your MaximoPlus app with little effort.
+

@@ -1,0 +1,4 @@
+Premain-Class: maximoplus.MaximoHookAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+b

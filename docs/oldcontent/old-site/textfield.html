@@ -1,0 +1,217 @@
+1. Basic concepts
+You will never instantiate the field component directly, it will always be done by the Grid or Section control. Check the Section documentation for details on how it is done.
+During the creation of a field, the field metadata is sent from the parent control. The metadata contains the field information from the Maximo server (attribute name, label, data type, length, does it have Long Description..), as well as the custom metadata added to the control (see examples below).
+The field creation is done as described in part 2. Once you render parent control (Section or GridRow), the field itself will be rendered. After rendering, event listeners are automatically attached to the field control and the server comunication starts automatically, like for all other Minimo controls. More details are contained in subsequent sections.
+
+2. Creating the HTML structure of the field.
+The most common field-level control is the TextField. Like all the other field level controls, it has the concept of renderer, inherited from Google Closure. Renderer is the function that creates the HTML structure of the field. If you are not going to change the structure, you should not override the renderer class.
+To change the default renderer, you should override the prototype function maximoplus.controls.prototype.getRenderer and override the maximoplus.controls.TextFieldRender.prototype.createDom .
+
+Example:
+
+<pre><code>
+
+MyTextField = function (metadata,id){
+  //the constructor class
+  maximoplus.controls.TextField.call(this,metadata,id);
+}
+
+gooog.inherits(MyTextField, maximoplus.controls.TextField);
+
+MyTextField.prototype.getRenderer = function(){
+  return mew MyTextFieldRenderer(this);
+}
+
+MyTextFieldRenderer = function (metadata,id){
+//constructor
+  maximoplus.controls.TextFieldRenderer.call(this,metadta,id);
+}
+
+goog.inherits(MyTextFieldRenderer, maximoplus.controls.TextFieldRenderer);
+
+MyTextFieldRenderer.prototype.createDom = function(control){
+//..function that 
+var dm = document.createElement("div");
+//now insert some custom structure here
+
+return dm;
+}
+
+</code></pre>
+
+The default structure of the field is like on the picture below:
+
+(Insert image here)
+
+The structure is similar to the one found in Maximo: first there is the status part (i.e, is the field required or not), then the active part of the control, text input and finally the holder of the lookup icon.
+If you choose to follow the diferrent structure of the text field, you have to override the following prototype methods:
+
+maximoplus.controls.prototype.getActiveDom - it should give the active part of the control, the input field
+
+maximoplus.controls.prototype.getLookupDom - if you are going to use lookups for the field, than you have to return the holder of the lookup
+
+maximoplus.control.prototype.getStatusDom - If you want  to mark witih the icon when the field is required, you have to return the holder for that icon
+
+Now, open the bootstrap-components.js example and check how these methods and renderer are implemented for the BootstrapSectionField control. Focus on the createDomFunction, and notice that the renderer reads the field metadata to get the data type of the field, attribute name, hasLookup and hasLD properties. All of these properties are read automatically by framework from Maximo except hasLookup.
+This brings os to another important prototype function:
+maximoplus.controls.TextField.prototype.addMeta(control, fieldName, metaName, metaValue);
+
+You can use the addMeta function to add additional attributes to your control metadata which will be used in your control renderer or other part of the function. The metadata will be added to the top-level control (Section, Grid or the ComponentAdapter), and the metadata will be passed to the field every time the new field is created.
+
+Example (from test-bootstrap.js):
+
+<pre><code>
+  var s= new BootstrapSection(b,["ponum","description","shipvia","purchaseagent","orderdate","status","vendor","totalcost","receipts","siteid"]);
+  s.addMeta("shipvia","listColumns", ["value","description"]);
+  s.addMeta("shipvia","canSmartFill",true);
+  s.addMeta("description","hasLookup",true);
+  s.addMeta("orderdate","hasLookup",true);
+</code></pre>
+
+Here, the metadata attribute listColumns instruct the field component which fields are to be displayed on the lookup, "canSmartFill" means the Maximo smart fill functionallity will be enabled for the field, and "hasLookup" means that the lookup is attached to the field. You can pick any name and value you want, but some names are reserved by library: "canSmartFill", "hasLookup",  set the API docs for the complete list.
+
+3. Event Listeners
+
+If you have followed the default configuration described in the part 2, all events listener are attached automatically to the active dom and lookup dom parts of the field. If you need to attach the additional listeners to the field, you need to override the enterDocument method of the field.
+Note:enterDocument is inherited from the Google Closure library and is essential for functioning of Minimo components and controls. Therefore, always call the "super" function when overriding this method.
+
+Example:
+
+<pre><code>
+MyTextField.prototype.enterDocument = function(){
+maximoplus.controls.TextField.prototype.enterDocument.call(this);
+//calling the "super" method
+var lookupDom = this.getLookupDom();
+var that = this;
+lookupDom.onclick = function(){
+    var listCols=that.metadata.listColumns;
+    if (listCols){
+      that.showList(listCols);
+    }
+  };
+//this will display a lookup if the listColumns exist as metadata
+}
+
+</pre></code>
+
+4. Server Communication
+
+Just like all the other Minimo controls, server communication is done automatically. Once the user changes the data in the active dom part of the field, changeMaximoValue function is called, and the server communication is handled in the background. 
+The protoype function "changeMaximoValue" is therefore crucial for functioning of the field controls, and don't ever override it.
+Sometimes however, you will have to call the function changeMaximoValue directly.
+
+ Example: open the bootstrap-components.js , and look for BootstrapSectionField.prototype.enterDocument function. Inside this function we attach the custom date pickers to the field (from the library bootstrap-datetimepicker.js). Usually we would do it in showDateLookup and showDateTimeLookup functions, but this component is attached automatically to the field, and not displayed with the separate function call.
+If we leave out the listener on "dp.change", you will see that the content of the field has been changed, but the server communication is not done. This is becuase the changeMaximoValue is done just when the user interacts with the field, not when the content is changed by the code. Listener on "dp.change" will trigger the call to changeMaximoValue.
+
+Another example would be the custom text field, without the input box. Say for example you want to display the starts for some rating, and listen when the user click on the star to select the rating. You would have to translate the user input to the actual value to be inserted in Maximo  and call the changeMaximoValue
+
+5. Displaying values from the server
+If your getActiveDom function returns the text input field, than the library automatically display server changes on fetching or updating the values on the server. If you decide not to use input field, because for example you want user to click on the stars to enter the rating of something, than you need to override the setFieldValue method. The argument to this function is always string value from Maximo.
+
+6. Displaying the field lookup
+The easiest way to attach the lookup to the field is to add the "hasLookup" field metadata to the parent section.
+
+Example:
+ <pre><code>
+var s =new maximoplus.controls.Section(b,["ponum","status","statusdate","description", "shipvia"]);
+s.addMeta("statusdate","hasLookup",true);
+s.addMeta("description", "hasLookup", true);
+s.addMeta("shipvia", "hasLookup", true);
+s.addMeta("shipvia","canSmartFill", true);
+</pre></code>
+
+When you add this metadata, the following happens:
+-If the field type is date or datetime, the date picker icon will be displayed, and the date(time) picker will be displayed upon clicking the icon.
+-If the field metadata "hasLD" is true, then the long description icon will be displayed and the long description lookup attached.
+-If the correspoding maximo field has a domain attached to it, and the metadata "listColumns" is present, then the lookup icon is displayed and the lookup dialog attached. If the field has ALN domain, the "listColumns" is set automatically to ["value", "description"] . If "canSmartFill" metadata attribute is set to true, the smart fill Maximo functinality is activated.
+
+To manually display the lookup, just call the showList function. The argument of the function is the list of columns in the lookup.
+
+6.1 Customizing the lookup
+
+6.1.1 Customizing the domain lookup
+
+To change the default lookup, override the getListDialog function. Example from the bootstap demo:
+
+<pre><code>
+    BootstrapSectionField.prototype.getListDialog =function(listContainer, columns){
+    var diag= new BootstrapListDialog(this.getContainer(), listContainer, this,columns);
+    diag.renderDeferred();
+    return diag;
+}
+</code></pre>
+
+To understand the concepts behind the customizating the list dialog, open the bootstrap-components.js and look for BootstrapListDialog class. The constructor needs to override the AbstractListDialog first.
+
+<pre><code>
+function BootstrapListDialog(container,listContainer, field, dialogCols){
+  maximoplus.controls.AbstractListDialog.call(this,container,listContainer,field, dialogCols);
+}
+</code></pre>
+
+All needed to be done in this step is just to mechanically call the parent constructor. Another almost mechanical step is to override the getSelectableGrid function. Selectable grid is a grid with a proper selectableF property. 
+
+From the bootstrap-components.js :
+
+<pre><code>
+ grid.selectableF=selectableF;
+</pre></code>
+
+The selectableF is the function internally built by the library. It controls what happens when the user selects the record from the domain. To make a grid "selectable", just assign this function to the property with the same name, as shown above.
+The only non-trivial step needed is to define how the grid is displayed in your dialog. Dialog can be any javascript component, internally built or the third-party. In the bootstrap-components.js we use the bootbox component, used for easier display of modal dialogs in the Bootstrap framework.
+Take a look now at drawGridInDialog function from the bootstrap-components.js. We need somehow to plug-in the grid into the bootbox component. In this case it is trivial, we just create the empty dom wrapEl, pass it to the bootbox as a dialog message, and render the grid within. For some other type of the dialog, the logic will be of course different, but that is the gist of it. 
+The last step is to override the closeListDialog function. When the user selects the value from the dialog the field is populated with the value, and the dialog is closed automatically. This step instructs the library how to close the dialog.
+These four simple steps are all that is needed to create your own domain lookup. If you want to create qbe lookups to be used in grid qbe row or qbe section, you should create the new component overriding the maximoplus.controls.AbstractQbeListDialog and follow exactly the same steps as for an ordinary dialog. Refer to the bootstrap-components.js for example. The only diferrence is that the qbe list dialog tries to mimic the Maximo behavior, so the user can pick one value from the list, or many values using the check boxes. For that purpose, two additional functions are created: defaultAction - called when the user presses the OK button after picking the multiple values from the list, and closeAction which is called when the user clicks on the Cancel button. The function drawGridInDialog from boootstrap-components.js binds the button events to these functions.
+
+6.1.2 Customizing the Long Description Lookup
+
+To attach the Long Description to the field, override the showLdLookup function. In general you want to use some of the existing WYSIWIG editors from the market, and there are tons of them. There are no fixed rules how to plug in the editor in the field, but it would be wise to follow the general guidance from here. For our bootstrap demo we have used the superb summernote editor. As usual open the bootstrap-components.js file and navigate to the createLongDescriptionDialog function. This function is called directly from the showLdLookup.
+
+The main glue used here is the maximoplus.controls.ComponentAdapter class. In generel the ComponentAdapter is designed to plug in the third party component. It provides no default rendering or listenting, you have to implement that by yourself.Refer to the Component Adapter documentation for more details.
+Now let's come back to the long description lookup. We created the ComponentAdapter for the long description of the field first:
+<pre><code>
+  var ldFieldName= field.getColumn()+"_LONGDESCRIPTION";
+  var adapter = new maximoplus.controls.ComponentAdapter(field.getContainer(),[ldFieldName]);
+</code></pre>
+We use the fact that the long description field in Maximo has the same name as its parent field followed by "_LONGDESCRIPTION". The component adapter is instantiated with the container and the list of fields required for fetching. We need just the long descripton field here.
+Next step is to populate initial data for the editor. For that we override the onFetchedRow function, and define how to put the data to editor. In this case we just set the innerHTML of the dom element we created :
+<pre><code>
+    el.innerHTML = data[ldFieldName];
+</code></pre>
+
+As in the domain lookup example, we use the bootbox component, with the newly created empty element el as a message. To create the long description from that div element we used the following in onFetchedRow function:
+
+<pre><code>
+$(el).summernote({height:300});
+</pre><code>
+
+Once the user clicks on the OK button, we jave to populate the value in Maximo. For that we use another ComponentAdapter function, setMaxValue:
+
+<pre><code>
+    adapter.setMaxValue(ldFieldName,$(el).code());
+</pre></code>
+
+6.1.3 Customizing the date lookup
+
+Once the user presses the lookup dom, depending on the type of the field, one of the createDateLookup or creteDateTimeLookup functions is called. In general you should use one of these to show the date or datetime lookup.
+In the bootstrap-components.js example however, these functions are empty. The reason is we used the datetime component without the facility to control when it is opened or closed. It binds itself automatically to the field. Go back to the BootstrapSectionField.prototype.enterDocument function and clook for the datetimepicker:
+<pre><code>
+    $(inputField).datetimepicker({pickTime:false});
+</pre></code>
+
+This is enough to create the field with date lookup icon which opens the datetime dialog on click, and to populate the date in the active dom of the field. However, populating the active dom will not trigger the update in Maximo, it happens automatically just on user interaction (when onchange event on active DOM happens). Again we have to instruct the component somehow to pass the data to Maximo. Luckilly, datetimepicker component fires the "dp.change" event once the date has been chosen:
+<pre><code>
+    $(inputField).on("dp.change", function(e){
+      //date picker changes the date in the input field, but it doesn't trigger the call to the server, we have tio do it manually here
+      var day = e.date.date();
+      var month= e.date.month();
+      var year = e.date.year();
+
+      that.changeMaximoValue(maximoplus.controls.getDateString(year, month,day));
+      });
+</pre></code>
+Notice the maximoplus.controls.getDateString function in the snippet above. It gives you the date in the format required by Maximo server. For the datetime data type there is a similar function, as you can see from bootstrap-components.js
+
+
+
+
